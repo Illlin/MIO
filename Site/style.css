@@ -14,9 +14,17 @@ h1 {
   font-family: DejaVu Sans;
   background-color: #284A81;
 }
+h2 {
+  color: #b4c7d9;
+  margin: 0;
+  padding: 10px;
+  font-family: DejaVu Sans;
+}
 
 p {
   color: #b4c7d9;
+  margin: 0;
+  padding: 10px;
   font-family: DejaVu Sans;
 }
 
@@ -48,10 +56,14 @@ li a:hover {
 
 .p {
   color: #b4c7d9;
+  margin: 0;
+  padding: 10px;
   font-family: DejaVu Sans;
 }
 
 .onerow {
+  margin: 0;
+  padding: 10px;
   color: #b4c7d9
   display:inline-block;
 }
