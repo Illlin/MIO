@@ -4,16 +4,7 @@
         <title>WebSocket demo</title>
     </head>
     <body>
-        <script>
-			// Define The Socket Object
-            var ws = new WebSocket("ws://127.0.0.1:5678/"),
-				name = window.prompt("enter name","");
-			// Send the name to the server through the socket
-			ws.send(name)
-			// Event holds the page untill  message is recived
-			ws.onmessage = function (event) {
-                alert(event.data)
-			};
+        <script type="text/javascript" src="client.js">
         </script>
     </body>
 </html>
