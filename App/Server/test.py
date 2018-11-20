@@ -9,7 +9,7 @@ print()
 print("MAKE QUEUE: \t\t",end = "")
 try:
     # Testing if you can make queue
-    que = classes.queue.queue()
+    que = classes.queue.Queue()
     print("PASS")
     pass_count += 1
 

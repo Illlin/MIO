@@ -5,12 +5,12 @@
 import asyncio  # Handles asyncrodous input output
 import websockets  # Handles webosocket connectiuons
 import threading
-from classes.queue import Queue
+from classes.queue import queue
 
 class client:
     def __init__(self, socket):
         self.socket = socket
-        self.que = Queue()
+        self.que = queue()
 
             
     
@@ -56,8 +56,8 @@ async def socket_code(user):
 
 async def run_socket(ws, path):
     user = client(ws)
-    loop.run_in_executor(user.summon_deamon())
-    asyncio.run(socket_code(user))
+    asyncio.run_coroutine_threadsafe(user.summon_deamon(), loop)
+    asyncio.run_coroutine_threadsafe(socket_code(user), loop)
 
 # Name function to start server
 start_server = websockets.serve(run_socket, 'localhost', 5678)

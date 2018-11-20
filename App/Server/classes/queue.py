@@ -1,7 +1,7 @@
 # modual of classes to use in code.
 
 # Implementation of a queue
-class queue:
+class Queue:
     def __init__(self):
         self.queue = []
 
