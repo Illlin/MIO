@@ -1,5 +1,5 @@
 # Sol Steele
-# This script Handles settings from an exsternal file
+# This script Handles settings from an external file
 
 # Imports
 import json

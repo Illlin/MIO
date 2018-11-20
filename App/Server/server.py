@@ -5,7 +5,7 @@
 import asyncio  # Handles asyncrodous input output
 import websockets  # Handles webosocket connectiuons
 import threading
-from classes.queue import queue
+from classes.queue import Queue
 
 class client:
     def __init__(self, socket):

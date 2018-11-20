@@ -78,3 +78,66 @@ except Exception as e:
 print(f"PASS COUNT: \t\t{pass_count}")
 print(f"FAIL COUNT: \t\t{fail_count}")
 print("------------")
+
+# json_file test
+print("----JSON TEST----")
+# Used to test files
+import os.path
+
+from classes.json_file import Json_file
+pass_count = 0
+fail_count = 0
+file = "test.json"
+
+print("MAKE FILE: \t\t",end = "")
+# Make sure file is not there
+if os.path.isfile(file):
+    os.remove(file)
+try:
+    # Test setting up object
+    test_json = Json_file(file)
+    print("PASS")
+    pass_count += 1
+
+    # Test writing data
+    print("ADD DATA: \t\t",end = "")
+    test_json.set_data("Test","Check")
+    print("PASS")
+    pass_count += 1
+
+    # Test Reading data
+    print("GET DATA: \t\t",end = "")
+    if test_json.get_data("Test") == "Check":
+        print("PASS")
+        pass_count += 1
+    else:
+        print("FAIL")
+        fail_count += 1
+
+    # Test Write to file
+    print("WRITE FILE: \t\t",end = "")
+    test_json.write_to_file()
+    if os.path.isfile(file):
+        print("PASS")
+        pass_count += 1
+    else:
+        print("FAIL")
+        fail_count += 1
+
+    # Test read from file
+    print("READ FILE: \t\t",end = "")
+    test_json_read = Json_file(file)
+    if test_json_read.get_data("Test") == "Check":
+        print("PASS")
+        pass_count += 1
+    else:
+        print("FAIL")
+        fail_count += 1
+    os.remove(file)
+
+except Exception as e:
+    print("FAIL: " + str(e))
+    fail_count += 1
+print(f"PASS COUNT: \t\t{pass_count}")
+print(f"FAIL COUNT: \t\t{fail_count}")
+print("------------")
