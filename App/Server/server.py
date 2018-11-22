@@ -10,7 +10,7 @@ from classes.queue import Queue
 class client:
     def __init__(self, socket):
         self.socket = socket
-        self.que = queue()
+        self.que = Queue()
 
             
     
