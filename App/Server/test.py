@@ -1,143 +1,79 @@
 # Automatic testing of code to see if it is functional.
 
-# Queue Test
-print("----QUEUE TEST----")
-pass_count = 0
-fail_count = 0
+# Format text to be read easily
+def print_test(text,success):
+    print("{0:<20}: {1}".format(text,success))
+
+def test(class_name,tests):
+    print("--------"+class_name+"--------")
+    # Notes for future reference
+    """
+    [
+        ["NAME", function, input, output],
+        ["NAME", function, input, output],
+    ]
+    """
+    pass_count = 0
+    fail_count = 0
+
+    for test_case in tests:
+        test_name = test_case[0]
+        test_input, test_output = test_case[2], test_case[3]
+        try:
+            # Run Function
+            output = test_case[1](*test_input)
+            if output == test_output:
+                print_test(test_name, "PASS")
+                pass_count += 1
+            else:
+                print_test(test_name, "FAIL: " + str(type(output)) +": "+ str(output))
+                fail_count += 1
+        except Exception as error:
+            print_test(test_name,"FAIL " + str(error))
+            fail_count += 1
+    print_test("PASS COUNT", str(pass_count))
+    print_test("FAIL COUNT", str(fail_count))
+    print("----------------")
+
+
+#New Queue test:
 import classes.queue
-print()
-print("MAKE QUEUE: \t\t",end = "")
-try:
-    # Testing if you can make queue
-    que = classes.queue.Queue()
-    print("PASS")
-    pass_count += 1
+que = classes.queue.Queue()
+test(
+    "QUEUE",
+    [
+    #   NAME                    FUNCTION            INPUT       OUTPUT
+        ["QUEUE LENGTH NEW",    que.len,            (),         0],
+        ["QUEUE DATA NEW",      que.isdata,         (),         False],
+        ["QUEUE ENQUE",         que.enqueue,        ("test",),  None],
+        ["QUEUE LENGTH DATA",   que.len,            (),         1],
+        ["QUEUE DATA",          que.isdata,         (),         True],
+        ["QUEUE DEQUEUE NEW",   que.dequeue,        (),         "test"],
+        ["QUEUE DEQUEUE NONE",  que.dequeue,        (),         None],
+    ]
+)
 
-    # Testing if origonal length is 0
-    print("QUEUE LENGTH NEW: \t",end = "")
-    if que.len() == 0:
-        print("PASS")
-        pass_count += 1
-    else:
-        print("FAIL")
-        fail_count += 1
-
-    # No data should be present and queue initialisation
-    print("QUEUE DATA NEW: \t",end = "")
-    if not que.isdata():
-        print("PASS")
-        pass_count += 1
-    else:
-        print("FAIL")
-        fail_count += 1
-
-    # Test Enqueue data
-    print("QUEUE ENQUE: \t\t",end = "")
-    que.enqueue("test")
-    print("PASS")
-    pass_count += 1
-
-    # Testing if origonal length is 1 after enqueue
-    print("QUEUE LENGTH DATA: \t",end = "")
-    if que.len() == 1:
-        print("PASS")
-        pass_count += 1
-    else:
-        print("FAIL")
-        fail_count += 1
-
-    # Should have data now
-    print("QUEUE DATA: \t\t",end = "")
-    if que.isdata():
-        print("PASS")
-        pass_count += 1
-    else:
-        print("FAIL")
-        fail_count += 1
-
-    # Test Dequeue
-    print("QUEUE DEQUE DATA: \t",end = "")
-    if que.dequeue() == "test":
-        print("PASS")
-        pass_count += 1
-    else:
-        print("FAIL")
-        fail_count += 1
-
-    # Test Dequeue
-    print("QUEUE DEQUE NULL: \t",end = "")
-    if que.dequeue() == None:
-        print("PASS")
-        pass_count += 1
-    else:
-        print("FAIL")
-        fail_count += 1
-except Exception as e:
-    print("FAIL: " + str(e))
-    fail_count += 1
-print(f"PASS COUNT: \t\t{pass_count}")
-print(f"FAIL COUNT: \t\t{fail_count}")
-print("------------")
-
-# json_file test
-print("----JSON TEST----")
-# Used to test files
-import os.path
-
-from classes.json_file import Json_file
-pass_count = 0
-fail_count = 0
+import classes.json_file
+import os
 file = "test.json"
 
-print("MAKE FILE: \t\t",end = "")
 # Make sure file is not there
 if os.path.isfile(file):
     os.remove(file)
-try:
-    # Test setting up object
-    test_json = Json_file(file)
-    print("PASS")
-    pass_count += 1
 
-    # Test writing data
-    print("ADD DATA: \t\t",end = "")
-    test_json.set_data("Test","Check")
-    print("PASS")
-    pass_count += 1
-
-    # Test Reading data
-    print("GET DATA: \t\t",end = "")
-    if test_json.get_data("Test") == "Check":
-        print("PASS")
-        pass_count += 1
-    else:
-        print("FAIL")
-        fail_count += 1
-
-    # Test Write to file
-    print("WRITE FILE: \t\t",end = "")
-    test_json.write_to_file()
-    if os.path.isfile(file):
-        print("PASS")
-        pass_count += 1
-    else:
-        print("FAIL")
-        fail_count += 1
-
-    # Test read from file
-    print("READ FILE: \t\t",end = "")
-    test_json_read = Json_file(file)
-    if test_json_read.get_data("Test") == "Check":
-        print("PASS")
-        pass_count += 1
-    else:
-        print("FAIL")
-        fail_count += 1
+json = classes.json_file.Json_file(file)
+test(
+    "JSON",
+    [
+    #   NAME                    FUNCTION                INPUT               OUTPUT
+        ["ADD DATA",            json.set_data,          ("test","check"),   None],
+        ["GET DATA",            json.get_data,          ("test",),          "check"],
+        ["WRITE FILE",          json.write_to_file,     (),                 None],
+        ["READ FILE",           json.load_from_file,    (),                 None],
+        ["VALIDATE READ",       json.get_data,          ("test",),          "check"],
+    ]
+)
+# Clear output of file:
+if os.path.isfile(file):
     os.remove(file)
-
-except Exception as e:
-    print("FAIL: " + str(e))
-    fail_count += 1
-print(f"PASS COUNT: \t\t{pass_count}")
-print(f"FAIL COUNT: \t\t{fail_count}")
-print("------------")
+    
