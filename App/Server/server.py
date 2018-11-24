@@ -6,7 +6,6 @@ import classes.json_file
 import classes.logger
 import classes.client
 import classes.game_loop
-import classes.server
 
 from multiprocessing import Process
 import asyncio
@@ -38,9 +37,7 @@ def main():
     log("Control", "Start Server Thread")
     # Pass event loop to Server for it to run.
     loop = asyncio.get_event_loop()
-    classes.server.Server(setup_user,settings,log,loop)
-
-    """
+    
     log("Control", "Server Starting")
     # Setup the server async coroutine
     start_server = websockets.serve(
@@ -53,7 +50,7 @@ def main():
     loop.run_until_complete(start_server)
     log("Control", "Enterting Server Loop")
     asyncio.get_event_loop().run_forever()
-    """
+
 
     
 main()
