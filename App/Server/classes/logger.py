@@ -36,5 +36,5 @@ class Log:
     # Remove log file.
     def purge_log(self):
         with open(self.log_file,"w") as file:
-            file.write("Log Purged - " + self.get_time())
+            file.write("Log Purged - " + self.get_time() + "\n")
         

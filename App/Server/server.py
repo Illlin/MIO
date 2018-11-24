@@ -1,70 +1,59 @@
-#!/usr/bin/python3
+#!/usr/bin/python3.7
 # Sol Steele
-# Initial server test
+# Python Server
 
-import asyncio  # Handles asyncrodous input output
-import websockets  # Handles webosocket connectiuons
+import classes.json_file
+import classes.logger
+import classes.client
+import classes.game_loop
+import classes.server
+
+from multiprocessing import Process
+import asyncio
 import threading
-from classes.queue import Queue
+import websockets
 
-class client:
-    def __init__(self, socket):
-        self.socket = socket
-        self.que = Queue()
+users = []
 
-            
+# load settings
+settings = classes.json_file.Json_file("settings.JSON")
+
+# Setup loggger
+logger = classes.logger.Log(settings.get_data("log_file"))
+log = logger.log
+
+async def setup_user(socket, path):
+    log("Client", "Client Connected")
+    current_client = classes.client.Client(socket,log)
+    users.append(current_client)
+    log("Client", "Client Entering Loop")
+    await current_client.start_loops()
+
+# Running in function so can be called by external file if needed.
+def main():
+    log("Control", "Starting User Thread")
+    # Start Game loop thread
+    classes.game_loop.Game_loop(users,log,settings)
+
+    log("Control", "Start Server Thread")
+    # Pass event loop to Server for it to run.
+    loop = asyncio.get_event_loop()
+    classes.server.Server(setup_user,settings,log,loop)
+
+    """
+    log("Control", "Server Starting")
+    # Setup the server async coroutine
+    start_server = websockets.serve(
+        setup_user, # Bound function
+        settings.get_data("server_address"), 
+        settings.get_data("server_port"),
+    )    
+
+    log("Control", "Socket Object Started")
+    loop.run_until_complete(start_server)
+    log("Control", "Enterting Server Loop")
+    asyncio.get_event_loop().run_forever()
+    """
+
     
-    # Return queued messages
-    def recv(self):
-        if self.que.isdata():
-            return self.que.dequeue()
-        else:
-            return None
-
-    # Send data
-    async def send(self,data):
-        await self.socket.send(data)
-
-    # Get message and add to queue
-    async def recv_to_queue(self):
-        data = await self.socket.recv()
-        self.que.enqueue(data)
-
-    async def summon_deamon(self):
-        self.deamon_task = asyncio.create_task(
-                self.deamon_loop()
-            )
-        return self.deamon_task
-
-    async def deamon_loop(self):
-        print("DEAMON UP")
-        while True:
-            await self.recv_to_queue()
-            print("DEAMON TEST")
-
-
-async def socket_code(user):
-    print("Connection")
-    name = user.recv()
-    while name == None:
-        name = user.recv()
-    print(name)
-
-    # respond with greeting
-    await user.send("Hello " + name)
-    print("Connection Closed")
-
-async def run_socket(ws, path):
-    user = client(ws)
-    asyncio.run_coroutine_threadsafe(user.summon_deamon(), loop)
-    asyncio.run_coroutine_threadsafe(socket_code(user), loop)
-
-# Name function to start server
-start_server = websockets.serve(run_socket, 'localhost', 5678)
-
-print("Start")
-# Define main loop
-loop = asyncio.get_event_loop()
-loop.run_until_complete(start_server)
-print("Enter Loop")
-asyncio.get_event_loop().run_forever()
+main()

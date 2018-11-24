@@ -1,1 +1,5 @@
-{"User": "Illin"}
+{
+    "log_file": "server_log.txt",
+    "server_port": 5678, 
+    "server_address": "localhost"
+}

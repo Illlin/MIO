@@ -1,1 +1,9 @@
-{"Server": {"colour": "blue", "display": true}}
+{
+    "Server":      {"colour": "blue",  "display": true},
+    "Server_Error":{"colour": "red",   "display": true},
+    "Control":     {"colour": "cyan",  "display": true},
+    "Client":      {"colour": "green", "display": true},
+    "Client_info": {"colour": "green", "display": true},
+    "packet_in":   {"colour": "white", "display": true},
+    "packet_out":  {"colour": "white", "display": true}
+}
