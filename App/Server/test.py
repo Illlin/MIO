@@ -42,14 +42,14 @@ que = classes.queue.Queue()
 test(
     "QUEUE",
     [
-    #   NAME                    FUNCTION            INPUT       OUTPUT
-        ["QUEUE LENGTH NEW",    que.len,            (),         0],
-        ["QUEUE DATA NEW",      que.isdata,         (),         False],
-        ["QUEUE ENQUE",         que.enqueue,        ("test",),  None],
-        ["QUEUE LENGTH DATA",   que.len,            (),         1],
-        ["QUEUE DATA",          que.isdata,         (),         True],
-        ["QUEUE DEQUEUE NEW",   que.dequeue,        (),         "test"],
-        ["QUEUE DEQUEUE NONE",  que.dequeue,        (),         None],
+    #   NAME                    FUNCTION                INPUT               OUTPUT
+        ["QUEUE LENGTH NEW",    que.len,                (),                 0],
+        ["QUEUE DATA NEW",      que.isdata,             (),                 False],
+        ["QUEUE ENQUE",         que.enqueue,            ("test",),          None],
+        ["QUEUE LENGTH DATA",   que.len,                (),                  1],
+        ["QUEUE DATA",          que.isdata,             (),                 True],
+        ["QUEUE DEQUEUE NEW",   que.dequeue,            (),                 "test"],
+        ["QUEUE DEQUEUE NONE",  que.dequeue,            (),                 None],
     ]
 )
 
@@ -76,4 +76,3 @@ test(
 # Clear output of file:
 if os.path.isfile(file):
     os.remove(file)
-    

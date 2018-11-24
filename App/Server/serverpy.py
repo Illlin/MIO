@@ -12,7 +12,6 @@ class client:
         self.socket = socket
         self.que = Queue()
 
-            
     
     # Return queued messages
     def recv(self):
@@ -21,20 +20,24 @@ class client:
         else:
             return None
 
+
     # Send data
     async def send(self,data):
         await self.socket.send(data)
+
 
     # Get message and add to queue
     async def recv_to_queue(self):
         data = await self.socket.recv()
         self.que.enqueue(data)
 
+
     async def summon_deamon(self):
         self.deamon_task = asyncio.create_task(
                 self.deamon_loop()
             )
         return self.deamon_task
+
 
     async def deamon_loop(self):
         print("DEAMON UP")
