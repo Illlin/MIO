@@ -1,6 +1,24 @@
 # Main Game Loop of the game
 from threading import Thread
 
+# Main game loop
+def main_loop(users,log,settings):
+    for client in users:
+        if client.recv_que.isdata():
+            name = client.recv_que.dequeue()
+            message = "Hello " + name
+            log("Game_info","Got data")
+            client.send_que.enqueue(message)
+            client.send_que.enqueue("So, This is message 2")
+            
+            while not client.recv_que.isdata():
+                pass
+            m1 = client.recv_que.dequeue()
+            while not client.recv_que.isdata():
+                pass
+            m2 = client.recv_que.dequeue()
+            log("Game_info", "Got: " + m1 + m2)
+
 class Game_loop(Thread):
     def __init__(self,users,log,settings):
         Thread.__init__(self)
@@ -13,9 +31,4 @@ class Game_loop(Thread):
     def run(self):
         self.log("Control", "Entering Client Loop")
         while True:
-            for client in self.users:
-                if client.recv_que.isdata():
-                    name = client.recv_que.dequeue()
-                    message = "Hello " + name
-                    self.log("Control","GOT DATA!")
-                    client.send_que.enqueue(message)
+            main_loop(self.users,self.log,self.settings)

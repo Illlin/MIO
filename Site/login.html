@@ -6,6 +6,8 @@
 <title>MIO</title>
 </head>
 <body>
+	
+	<script type="text/javascript" src="JS/login.js"></script>
 
 	<div id="wraper">
 		<h1>MIO The Python MMO</h1>
@@ -19,12 +21,15 @@
 	</div>
 
     <div class="onerow">
-		<form action="/action_page.php">
-	  	<font color="#b4c7d9">E-Mail:
-  		<input name="email" id="E-Mail" type="text" />
-		Password:</font>
-  		<input name="password" id="Password" type="password" /> 
-  		<input type="submit" value="Login">
+			<form id="login_form" method="post" name="login">
+			
+	  		<font color="#b4c7d9">
+				E-Mail:
+  				<input name="email" id="E-Mail" type="text"></input>
+				Password:
+  				<input name="password" id="Password" type="password"></input> 
+				<input onclick="validatePassword()" type="submit" value="Submit">
+			</font>
 		</form>
     </div>
 

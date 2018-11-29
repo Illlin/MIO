@@ -5,5 +5,10 @@ name = window.prompt("enter name","");
 ws.send(name)
 // Event holds the page until  message is received
 ws.onmessage = function (event) {
-alert(event.data)
+    alert(event.data)
 };
+ws.onmessage = function (event) {
+    alert(event.data)
+};
+ws.send(window.prompt("Message1"))
+ws.send(window.prompt("Message2"))

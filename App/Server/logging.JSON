@@ -1,9 +1,11 @@
 {
-    "Server":      {"colour": "blue",  "display": true},
-    "Server_Error":{"colour": "red",   "display": true},
-    "Control":     {"colour": "cyan",  "display": true},
-    "Client":      {"colour": "green", "display": true},
-    "Client_info": {"colour": "green", "display": true},
-    "packet_in":   {"colour": "white", "display": true},
-    "packet_out":  {"colour": "white", "display": true}
+    "Server":           {"colour": "blue",  "display": true},
+    "Server_Error":     {"colour": "red",   "display": true},
+    "Control":          {"colour": "cyan",  "display": true},
+    "Client":           {"colour": "green", "display": true},
+    "Client_info":      {"colour": "green", "display": false},
+    "packet_in":        {"colour": "white", "display": true},
+    "packet_out":       {"colour": "white", "display": true},
+    "Game_info":        {"colour": "yellow","display": true},
+    "packet_error":     {"colour": "red",   "display": true}
 }
