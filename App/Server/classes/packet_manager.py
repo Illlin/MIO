@@ -28,7 +28,7 @@ class Packet_queuer(Thread):
                     try:
                         packet_lump = json.loads(packet_lump)
                         for i in range(len(packet_lump)):
-                            self.packet_que.enqueue(packet_lump[i])
+                            self.packet_que.enqueue({"user":user, "packet":packet_lump[i]})
 
                     # Invalid Json used to send packet
                     except json.decoder.JSONDecodeError:
@@ -62,11 +62,20 @@ class Packet_queuer(Thread):
 def none_function():
     pass
 
+# Function peramiter order. (User Class, Packet Data, LoggerFunction, SettingsFunction)
 packet_functions = {
-    0:none_function,
-    1:none_function,
-    2:none_function,
-    3:1
+     0:none_function,
+     1:none_function,
+     2:login,
+     3:none_function,
+     9:none_function,
+
+    10:none_function,
+    11:none_function,
+    12:none_function,
+    13:none_function,
+
+    20:none_function,
 }
 class Packet_worker(Thread):
     def __init__(self,packet_queue,log,settings):
@@ -80,6 +89,10 @@ class Packet_worker(Thread):
     
     def run(self):
         while self.packet_que.isdata():
-            data = self.packet_que.dequeue()
+            packet = self.packet_que.dequeue()
+            user = packet["user"]
+            data = packet["packet"]["DATA"]
+            id = packet["packet"]["ID"]
+            packet_functions[id](user, data, self.log, self.settings)
             
 
