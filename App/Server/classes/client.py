@@ -5,8 +5,8 @@ import asyncio
 
 class Client:
     # Initialise all the variable for class
-    def __init__(self, socket, log,sleeptime=0.01):
-        self.log = log
+    def __init__(self, socket, functions,sleeptime=0.01):
+        self.log = functions["log"]
         self.log("Client_info","Client object started")
         self.alive = True
         self.socket = socket

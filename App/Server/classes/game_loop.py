@@ -1,4 +1,6 @@
 # Main Game Loop of the game
+# TODO Rewrite LOOP
+
 from threading import Thread
 
 # Main game loop
@@ -20,12 +22,15 @@ def main_loop(users,log,settings):
             log("Game_info", "Got: " + m1 + m2)
 
 class Game_loop(Thread):
-    def __init__(self,users,log,settings):
+    def __init__(self,functions):
         Thread.__init__(self)
         self.deamon=True
-        self.users = users
-        self.log = log
-        self.settings = settings
+
+        self.functions = functions
+        self.users = functions["users"]
+        self.log = functions["log"]
+        self.settings = functions["settings"]
+
         self.start()
     
     def run(self):

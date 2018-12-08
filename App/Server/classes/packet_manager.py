@@ -5,12 +5,12 @@ import json
 from threading import Thread
 
 class Packet_queuer(Thread):
-    def __init__(self,users,log,settings):
+    def __init__(self,functions):
         Thread.__init__(self)
         self.deamon=True
-        self.users = users
-        self.log = log
-        self.settings = settings
+        self.users = functions["users"]
+        self.log = functions["log"]
+        self.settings = functions["settings"]
         self.start()
         self.packet_que = classes.queue.Queue()
     
@@ -63,27 +63,14 @@ def none_function():
     pass
 
 # Function peramiter order. (User Class, Packet Data, LoggerFunction, SettingsFunction)
-packet_functions = {
-     0:none_function,
-     1:none_function,
-     2:login,
-     3:none_function,
-     9:none_function,
 
-    10:none_function,
-    11:none_function,
-    12:none_function,
-    13:none_function,
 
-    20:none_function,
-}
 class Packet_worker(Thread):
-    def __init__(self,packet_queue,log,settings):
+    def __init__(self,packet_queue,functions):
         Thread.__init__(self)
         self.deamon=True
         self.packet_queue = packet_queue
-        self.log = log
-        self.settings = settings
+        self.functions = functions
         self.start()
         self.packet_que = classes.queue.Queue()
     
@@ -93,6 +80,6 @@ class Packet_worker(Thread):
             user = packet["user"]
             data = packet["packet"]["DATA"]
             id = packet["packet"]["ID"]
-            packet_functions[id](user, data, self.log, self.settings)
+            packet_functions[id](user, data, self.functions)
             
 
