@@ -1,7 +1,7 @@
 # Sol Steele 2018
 
 # This is the game client that will run the app
-import pygame 
+#import pygame 
 import sys
 import classes.socket_handler
 

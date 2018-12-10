@@ -5,6 +5,7 @@ import classes.queue
 
 class Connection(Thread):
     def __init__(self, server_address, server_port):
+        Thread.__init__(self)
         self.deamon=True
 
         self.server_address = server_address
