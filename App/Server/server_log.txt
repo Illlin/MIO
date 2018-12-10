@@ -5,3 +5,7 @@
 <<2018-12-08 15:41:59.574399>> Control: Server Starting
 <<2018-12-08 15:41:59.632150>> Control: Socket Object Started
 <<2018-12-08 15:41:59.933363>> Control: Enterting Server Loop
+<<2018-12-09 16:11:45.009348>> Control: Starting User Thread
+<<2018-12-09 16:11:45.010329>> Control: Entering Client Loop
+<<2018-12-09 16:11:45.010437>> Control: Start Server Thread
+<<2018-12-09 16:11:45.047278>> Control: Server Starting

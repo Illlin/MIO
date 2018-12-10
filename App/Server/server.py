@@ -8,12 +8,14 @@ import classes.logger
 import classes.client
 import classes.game_loop
 
-# Import libereys for threading and 
-import asyncio
+# Import libereys for threading and websockets
+
 import threading
-import websockets
+import socket
+
 
 users = []
+alive = True
 
 # load settings
 settings = classes.json_file.Json_file("settings.JSON")
@@ -22,41 +24,51 @@ settings = classes.json_file.Json_file("settings.JSON")
 logger = classes.logger.Log(settings.get_data("log_file"))
 log = logger.log
 
+# Will be used to pass classes to sub-processes by reference
 functions = {
     "log":log,
     "settings":settings,
     "users":users
 }
 
-async def setup_user(socket, path):
-    log("Client", "Client Connected")
-    current_client = classes.client.Client(socket,functions)
+# Used when a user connects to the server
+def setup_user(socket, address):
+    # Set up client object
+    current_client = classes.client.Client(socket,address,functions)
+
+    # Add user to list of connected users
     users.append(current_client)
-    log("Client", "Client Entering Loop")
-    await current_client.start_loops()
+
+    # Start the IO threads for the clients
+    current_client.start_loops()
+
 
 # Running in function so can be called by external file if needed.
 def main():
     log("Control", "Starting User Thread")
+
     # Start Game loop thread
     classes.game_loop.Game_loop(functions)
 
     log("Control", "Start Server Thread")
-    # Pass event loop to Server for it to run.
-    loop = asyncio.get_event_loop()
+
+    # Start server object
     
     log("Control", "Server Starting")
-    # Setup the server async coroutine
-    start_server = websockets.serve(
-        setup_user, # Bound function
-        settings.get_data("server_address"), 
-        settings.get_data("server_port"),
-    )    
+    # Setup the server thread
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    server_socket.bind((
+        settings.get_data("server_address"),
+        settings.get_data("server_port")
+    ))
 
-    log("Control", "Socket Object Started")
-    loop.run_until_complete(start_server)
-    log("Control", "Enterting Server Loop")
-    asyncio.get_event_loop().run_forever()
+    while alive:
+        # Accept connection
+        client_socket, client_address = server_socket.accept()
+        log("Connection", "Connection from " + str(client_address))
+
+        # Set up the user and spawn connection threads
+        setup_user(client_socket, client_address)
 
 
 main()

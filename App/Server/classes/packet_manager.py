@@ -63,7 +63,8 @@ def none_function():
     pass
 
 # Function peramiter order. (User Class, Packet Data, LoggerFunction, SettingsFunction)
-
+# TODO Set up packet handeling
+packet_functions = {}
 
 class Packet_worker(Thread):
     def __init__(self,packet_queue,functions):

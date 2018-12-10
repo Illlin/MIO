@@ -1,29 +1,25 @@
-# Class that will handle the users of the game as an object.
-
+# This will absctract the socket communication to a simple moduel that can be called and used to setup the server
+import socket
+from threading import Thread
 import classes.queue
-import asyncio
-from threading import Thread            
 
-class Client:
-    # Initialise all the variable for class
-    def __init__(self, socket, address, functions):
-        self.log = functions["log"]
+class Connection(Thread):
+    def __init__(self, server_address, server_port):
+        self.deamon=True
 
-        self.socket = socket
-        self.address = address
-
-        self.alive = True
+        self.server_address = server_address
+        self.server_port = server_port
         self.recv_que = classes.queue.Queue()
         self.send_que = classes.queue.Queue()
 
-        self.log("Client_info","Client object started")
+        self.start()
 
-    # Spawn threads for the loops so they are none blocking
-    async def start_loops(self):
-        self.log("Client_info","Starting loop")
-        self.recv_loop = Recv_loop(self.socket, self.recv_que)
-        self.send_loop = Send_loop(self.socket, self.send_que)
-        
+    def run(self):
+        self.connected = False
+        self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.socket.connect((self.server_address, self.server_port))
+        Recv_loop(self.socket, self.recv_que)
+        Send_loop(self.socket, self.send_que)
 
 
 # Thread code to handle loop recv

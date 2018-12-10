@@ -7,5 +7,6 @@
     "packet_in":        {"colour": "white", "display": true},
     "packet_out":       {"colour": "white", "display": true},
     "Game_info":        {"colour": "yellow","display": true},
-    "packet_error":     {"colour": "red",   "display": true}
+    "packet_error":     {"colour": "red",   "display": true},
+    "Connection":       {"colour": "blue",  "display": true}
 }
