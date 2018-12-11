@@ -40,5 +40,8 @@ def start_connection(address, port):
 if __name__ == "__main__":
     connection = start_connection("127.0.0.1",5678)
     print("Connected!")
+    connection.send_que.enqueue("Data 1")
+    connection.send_que.enqueue("Item 1 ")
+    connection.send_que.enqueue("Item 2 Concatonated \",,,,,,''',','")
 
 

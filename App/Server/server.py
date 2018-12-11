@@ -57,11 +57,15 @@ def main():
     log("Control", "Server Starting")
     # Setup the server thread
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    # Allow port re-use
+    server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    # Bind socket
     server_socket.bind((
         settings.get_data("server_address"),
         settings.get_data("server_port")
     ))
 
+    server_socket.listen(5)
     while alive:
         # Accept connection
         client_socket, client_address = server_socket.accept()
