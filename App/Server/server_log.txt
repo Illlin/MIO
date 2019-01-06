@@ -14105,3 +14105,498 @@
 <<2018-12-10 21:30:44.334434>> Client_info: Starting loop
 <<2018-12-10 21:30:44.395232>> Game_info: Got data
 <<2018-12-10 21:30:44.395451>> Game_info: Got: Item 1 Item 2 Concatonated ",,,,,,''',','
+<<2018-12-11 08:23:53.955895>> Control: Starting User Thread
+<<2018-12-11 08:23:53.956737>> Control: Entering Client Loop
+<<2018-12-11 08:23:53.956817>> Control: Start Server Thread
+<<2018-12-11 08:23:53.962302>> Control: Server Starting
+<<2018-12-11 08:24:11.940205>> Connection: Connection from ('127.0.0.1', 53694)
+<<2018-12-11 08:24:11.991374>> Client_info: Client object started
+<<2018-12-11 08:24:12.037340>> Client_info: Starting loop
+<<2018-12-11 08:24:12.088709>> Game_info: Got data
+<<2018-12-11 08:24:12.129414>> Game_info: Got: Item 1 Item 2 Concatonated ",,,,,,''',','
+<<2018-12-11 08:24:16.603396>> Client_info: Client Disconnected
+<<2019-01-01 16:03:54.394530>> Control: Starting User Thread
+<<2019-01-01 16:03:54.421119>> Control: Entering Client Loop
+<<2019-01-01 16:03:54.421195>> Control: Start Server Thread
+<<2019-01-01 16:03:54.436955>> Control: Server Starting
+<<2019-01-01 16:04:19.277549>> Connection: Connection from ('127.0.0.1', 37146)
+<<2019-01-01 16:04:19.323457>> Client_info: Client object started
+<<2019-01-01 16:04:19.364630>> Client_info: Starting loop
+<<2019-01-01 16:04:19.415779>> Game_info: Got data
+<<2019-01-01 16:04:19.461897>> Game_info: Got: Item 1 Item 2 Concatonated ",,,,,,''',','
+<<2019-01-01 16:04:31.438446>> Client_info: Client Disconnected
+<<2019-01-01 18:15:06.899104>> Control: Starting User Thread
+<<2019-01-01 18:15:06.899501>> Control: Start Server Thread
+<<2019-01-01 18:15:06.899691>> Control: Server Starting
+<<2019-01-01 18:15:06.899452>> Control: Entering Client Loop
+<<2019-01-01 18:15:10.708748>> Connection: Connection from ('127.0.0.1', 39008)
+<<2019-01-01 18:15:10.759805>> Client_info: Client object started
+<<2019-01-01 18:15:10.805977>> Client_info: Starting loop
+<<2019-01-01 18:15:40.041507>> Client_info: Client Disconnected
+<<2019-01-01 19:14:30.998218>> Connection: Connection from ('127.0.0.1', 39702)
+<<2019-01-01 19:14:31.054266>> Client_info: Client object started
+<<2019-01-01 19:14:31.098964>> Client_info: Starting loop
+<<2019-01-01 19:15:06.281502>> Client_info: Client Disconnected
+<<2019-01-01 19:17:46.001107>> Connection: Connection from ('127.0.0.1', 39756)
+<<2019-01-01 19:17:46.032863>> Client_info: Client object started
+<<2019-01-01 19:17:46.032987>> Client_info: Starting loop
+<<2019-01-01 19:17:55.133827>> Client_info: Client Disconnected
+<<2019-01-01 19:18:58.453154>> Connection: Connection from ('127.0.0.1', 39778)
+<<2019-01-01 19:18:58.489298>> Client_info: Client object started
+<<2019-01-01 19:18:58.489472>> Client_info: Starting loop
+<<2019-01-01 19:19:31.801403>> Client_info: Client Disconnected
+<<2019-01-01 19:19:34.357129>> Connection: Connection from ('127.0.0.1', 39788)
+<<2019-01-01 19:19:34.367645>> Client_info: Client object started
+<<2019-01-01 19:19:34.411482>> Client_info: Starting loop
+<<2019-01-01 19:21:41.551024>> Client_info: Client Disconnected
+<<2019-01-01 19:21:43.924438>> Connection: Connection from ('127.0.0.1', 39820)
+<<2019-01-01 19:21:43.960379>> Client_info: Client object started
+<<2019-01-01 19:21:44.006320>> Client_info: Starting loop
+<<2019-01-01 19:21:49.925327>> Client_info: Client Disconnected
+<<2019-01-01 19:22:14.659657>> Connection: Connection from ('127.0.0.1', 39830)
+<<2019-01-01 19:22:14.675171>> Client_info: Client object started
+<<2019-01-01 19:22:14.675277>> Client_info: Starting loop
+<<2019-01-01 19:22:25.518865>> Client_info: Client Disconnected
+<<2019-01-01 19:22:27.975233>> Connection: Connection from ('127.0.0.1', 39834)
+<<2019-01-01 19:22:28.026524>> Client_info: Client object started
+<<2019-01-01 19:22:28.062520>> Client_info: Starting loop
+<<2019-01-01 19:22:58.167822>> Client_info: Client Disconnected
+<<2019-01-01 19:23:00.406561>> Connection: Connection from ('127.0.0.1', 39852)
+<<2019-01-01 19:23:00.457487>> Client_info: Client object started
+<<2019-01-01 19:23:00.507768>> Client_info: Starting loop
+<<2019-01-01 19:23:17.938272>> Client_info: Client Disconnected
+<<2019-01-01 19:23:20.358745>> Connection: Connection from ('127.0.0.1', 39858)
+<<2019-01-01 19:23:20.358988>> Client_info: Client object started
+<<2019-01-01 19:23:20.359097>> Client_info: Starting loop
+<<2019-01-01 19:23:33.989144>> Client_info: Client Disconnected
+<<2019-01-01 19:23:36.327920>> Connection: Connection from ('127.0.0.1', 39860)
+<<2019-01-01 19:23:36.354210>> Client_info: Client object started
+<<2019-01-01 19:23:36.354337>> Client_info: Starting loop
+<<2019-01-01 19:23:45.796917>> Client_info: Client Disconnected
+<<2019-01-01 19:24:36.634683>> Connection: Connection from ('127.0.0.1', 39890)
+<<2019-01-01 19:24:36.691192>> Client_info: Client object started
+<<2019-01-01 19:24:36.732615>> Client_info: Starting loop
+<<2019-01-01 19:25:27.141403>> Client_info: Client Disconnected
+<<2019-01-01 19:25:28.678352>> Connection: Connection from ('127.0.0.1', 39898)
+<<2019-01-01 19:25:28.724296>> Client_info: Client object started
+<<2019-01-01 19:25:28.765407>> Client_info: Starting loop
+<<2019-01-01 19:26:13.574579>> Client_info: Client Disconnected
+<<2019-01-01 20:25:40.936589>> Connection: Connection from ('127.0.0.1', 40450)
+<<2019-01-01 20:25:40.952064>> Client_info: Client object started
+<<2019-01-01 20:25:40.992995>> Client_info: Starting loop
+<<2019-01-01 20:25:53.200193>> Client_info: Client Disconnected
+<<2019-01-01 20:26:12.963485>> Connection: Connection from ('127.0.0.1', 40454)
+<<2019-01-01 20:26:12.994509>> Client_info: Client object started
+<<2019-01-01 20:26:13.045761>> Client_info: Starting loop
+<<2019-01-01 20:26:45.971882>> Client_info: Client Disconnected
+<<2019-01-01 20:26:48.299367>> Connection: Connection from ('127.0.0.1', 40464)
+<<2019-01-01 20:26:48.299626>> Client_info: Client object started
+<<2019-01-01 20:26:48.340528>> Client_info: Starting loop
+<<2019-01-01 20:26:54.203092>> Client_info: Client Disconnected
+<<2019-01-01 20:27:11.324403>> Connection: Connection from ('127.0.0.1', 40470)
+<<2019-01-01 20:27:11.370574>> Client_info: Client object started
+<<2019-01-01 20:27:11.417108>> Client_info: Starting loop
+<<2019-01-01 20:27:26.822032>> Client_info: Client Disconnected
+<<2019-01-01 20:28:00.738991>> Connection: Connection from ('127.0.0.1', 40490)
+<<2019-01-01 20:28:00.739198>> Client_info: Client object started
+<<2019-01-01 20:28:00.739293>> Client_info: Starting loop
+<<2019-01-01 20:28:05.229525>> Client_info: Client Disconnected
+<<2019-01-01 20:29:01.843242>> Connection: Connection from ('127.0.0.1', 40504)
+<<2019-01-01 20:29:01.864003>> Client_info: Client object started
+<<2019-01-01 20:29:01.915003>> Client_info: Starting loop
+<<2019-01-01 20:29:08.764799>> Client_info: Client Disconnected
+<<2019-01-01 20:29:46.350761>> Connection: Connection from ('127.0.0.1', 40516)
+<<2019-01-01 20:29:46.386775>> Client_info: Client object started
+<<2019-01-01 20:29:46.437938>> Client_info: Starting loop
+<<2019-01-01 20:31:54.232456>> Client_info: Client Disconnected
+<<2019-01-01 20:32:27.123667>> Connection: Connection from ('127.0.0.1', 40598)
+<<2019-01-01 20:32:27.134395>> Client_info: Client object started
+<<2019-01-01 20:32:27.156606>> Client_info: Starting loop
+<<2019-01-01 20:32:46.673191>> Client_info: Client Disconnected
+<<2019-01-01 20:32:59.622786>> Connection: Connection from ('127.0.0.1', 40602)
+<<2019-01-01 20:32:59.623017>> Client_info: Client object started
+<<2019-01-01 20:32:59.623112>> Client_info: Starting loop
+<<2019-01-01 20:33:13.036464>> Client_info: Client Disconnected
+<<2019-01-01 20:33:36.132797>> Connection: Connection from ('127.0.0.1', 40620)
+<<2019-01-01 20:33:36.133039>> Client_info: Client object started
+<<2019-01-01 20:33:36.133115>> Client_info: Starting loop
+<<2019-01-01 20:33:48.193253>> Client_info: Client Disconnected
+<<2019-01-01 20:34:15.086980>> Connection: Connection from ('127.0.0.1', 40630)
+<<2019-01-01 20:34:15.127915>> Client_info: Client object started
+<<2019-01-01 20:34:15.133277>> Client_info: Starting loop
+<<2019-01-01 20:34:48.375315>> Client_info: Client Disconnected
+<<2019-01-02 11:21:13.664152>> Control: Starting User Thread
+<<2019-01-02 11:21:13.669546>> Control: Start Server Thread
+<<2019-01-02 11:21:13.669496>> Control: Entering Client Loop
+<<2019-01-02 11:21:13.669823>> Control: Server Starting
+<<2019-01-02 11:21:24.733996>> Connection: Connection from ('127.0.0.1', 58036)
+<<2019-01-02 11:21:24.790636>> Client_info: Client object started
+<<2019-01-02 11:21:24.831564>> Client_info: Starting loop
+<<2019-01-02 11:23:01.555009>> Client_info: Client Disconnected
+<<2019-01-02 11:23:02.968302>> Connection: Connection from ('127.0.0.1', 58052)
+<<2019-01-02 11:23:03.019697>> Client_info: Client object started
+<<2019-01-02 11:23:03.076895>> Client_info: Starting loop
+<<2019-01-02 11:23:25.794568>> Client_info: Client Disconnected
+<<2019-01-02 11:23:26.792471>> Connection: Connection from ('127.0.0.1', 58054)
+<<2019-01-02 11:23:26.818304>> Client_info: Client object started
+<<2019-01-02 11:23:26.860295>> Client_info: Starting loop
+<<2019-01-02 11:28:01.956926>> Client_info: Client Disconnected
+<<2019-01-02 11:28:03.059431>> Connection: Connection from ('127.0.0.1', 58160)
+<<2019-01-02 11:28:03.080330>> Client_info: Client object started
+<<2019-01-02 11:28:03.122275>> Client_info: Starting loop
+<<2019-01-02 11:28:08.041426>> Client_info: Client Disconnected
+<<2019-01-02 11:28:16.846241>> Connection: Connection from ('127.0.0.1', 58166)
+<<2019-01-02 11:28:16.851538>> Client_info: Client object started
+<<2019-01-02 11:28:16.851621>> Client_info: Starting loop
+<<2019-01-02 11:28:25.549767>> Client_info: Client Disconnected
+<<2019-01-02 11:28:34.367377>> Connection: Connection from ('127.0.0.1', 58172)
+<<2019-01-02 11:28:34.367624>> Client_info: Client object started
+<<2019-01-02 11:28:34.367706>> Client_info: Starting loop
+<<2019-01-02 11:29:06.436577>> Client_info: Client Disconnected
+<<2019-01-02 11:29:07.300332>> Connection: Connection from ('127.0.0.1', 58180)
+<<2019-01-02 11:29:07.356500>> Client_info: Client object started
+<<2019-01-02 11:29:07.413604>> Client_info: Starting loop
+<<2019-01-02 11:29:16.001565>> Client_info: Client Disconnected
+<<2019-01-02 11:29:43.496003>> Connection: Connection from ('127.0.0.1', 58200)
+<<2019-01-02 11:29:43.496226>> Client_info: Client object started
+<<2019-01-02 11:29:43.496345>> Client_info: Starting loop
+<<2019-01-02 11:30:07.634215>> Client_info: Client Disconnected
+<<2019-01-02 11:30:08.508707>> Connection: Connection from ('127.0.0.1', 58206)
+<<2019-01-02 11:30:08.529669>> Client_info: Client object started
+<<2019-01-02 11:30:08.545265>> Client_info: Starting loop
+<<2019-01-02 11:33:08.298449>> Client_info: Client Disconnected
+<<2019-01-02 11:33:08.931411>> Connection: Connection from ('127.0.0.1', 58274)
+<<2019-01-02 11:33:08.957269>> Client_info: Client object started
+<<2019-01-02 11:33:09.013415>> Client_info: Starting loop
+<<2019-01-02 11:33:11.491428>> Client_info: Client Disconnected
+<<2019-01-02 11:33:25.912699>> Connection: Connection from ('127.0.0.1', 58276)
+<<2019-01-02 11:33:25.938745>> Client_info: Client object started
+<<2019-01-02 11:33:25.984646>> Client_info: Starting loop
+<<2019-01-02 11:34:12.089946>> Client_info: Client Disconnected
+<<2019-01-02 11:34:12.795237>> Connection: Connection from ('127.0.0.1', 58294)
+<<2019-01-02 11:34:12.851638>> Client_info: Client object started
+<<2019-01-02 11:34:12.908006>> Client_info: Starting loop
+<<2019-01-02 11:34:42.998004>> Client_info: Client Disconnected
+<<2019-01-02 11:34:43.625212>> Connection: Connection from ('127.0.0.1', 58310)
+<<2019-01-02 11:34:43.656085>> Client_info: Client object started
+<<2019-01-02 11:34:43.707887>> Client_info: Starting loop
+<<2019-01-02 11:35:41.171463>> Client_info: Client Disconnected
+<<2019-01-02 11:35:41.902976>> Connection: Connection from ('127.0.0.1', 58328)
+<<2019-01-02 11:35:41.903189>> Client_info: Client object started
+<<2019-01-02 11:35:41.903255>> Client_info: Starting loop
+<<2019-01-02 11:35:51.538860>> Client_info: Client Disconnected
+<<2019-01-02 11:35:52.364193>> Connection: Connection from ('127.0.0.1', 58332)
+<<2019-01-02 11:35:52.398998>> Client_info: Client object started
+<<2019-01-02 11:35:52.437178>> Client_info: Starting loop
+<<2019-01-02 11:37:17.263862>> Client_info: Client Disconnected
+<<2019-01-02 16:20:43.618116>> Connection: Connection from ('127.0.0.1', 32834)
+<<2019-01-02 16:20:43.618333>> Client_info: Client object started
+<<2019-01-02 16:20:43.618401>> Client_info: Starting loop
+<<2019-01-02 16:38:19.013414>> Client_info: Client Disconnected
+<<2019-01-02 16:38:52.159538>> Connection: Connection from ('127.0.0.1', 33102)
+<<2019-01-02 16:38:52.208914>> Client_info: Client object started
+<<2019-01-02 16:38:52.215344>> Client_info: Starting loop
+<<2019-01-02 16:39:11.017619>> Client_info: Client Disconnected
+<<2019-01-02 16:40:01.602105>> Connection: Connection from ('127.0.0.1', 33128)
+<<2019-01-02 16:40:01.634705>> Client_info: Client object started
+<<2019-01-02 16:40:01.650417>> Client_info: Starting loop
+<<2019-01-02 16:41:59.057973>> Client_info: Client Disconnected
+<<2019-01-02 16:41:59.647492>> Connection: Connection from ('127.0.0.1', 33168)
+<<2019-01-02 16:41:59.667973>> Client_info: Client object started
+<<2019-01-02 16:41:59.709960>> Client_info: Starting loop
+<<2019-01-02 16:42:25.331478>> Client_info: Client Disconnected
+<<2019-01-02 16:43:48.351049>> Connection: Connection from ('127.0.0.1', 33192)
+<<2019-01-02 16:43:48.351221>> Client_info: Client object started
+<<2019-01-02 16:43:48.351291>> Client_info: Starting loop
+<<2019-01-02 16:43:53.752504>> Client_info: Client Disconnected
+<<2019-01-02 16:43:57.837573>> Connection: Connection from ('127.0.0.1', 33196)
+<<2019-01-02 16:43:57.861458>> Client_info: Client object started
+<<2019-01-02 16:43:57.866888>> Client_info: Starting loop
+<<2019-01-02 16:44:04.395065>> Client_info: Client Disconnected
+<<2019-01-02 16:44:15.926530>> Connection: Connection from ('127.0.0.1', 33202)
+<<2019-01-02 16:44:15.942093>> Client_info: Client object started
+<<2019-01-02 16:44:15.968524>> Client_info: Starting loop
+<<2019-01-02 16:44:26.176450>> Client_info: Client Disconnected
+<<2019-01-02 16:44:40.535681>> Connection: Connection from ('127.0.0.1', 33210)
+<<2019-01-02 16:44:40.570157>> Client_info: Client object started
+<<2019-01-02 16:44:40.601924>> Client_info: Starting loop
+<<2019-01-02 16:45:25.903090>> Client_info: Client Disconnected
+<<2019-01-02 16:45:27.216419>> Connection: Connection from ('127.0.0.1', 33228)
+<<2019-01-02 16:45:27.226868>> Client_info: Client object started
+<<2019-01-02 16:45:27.262906>> Client_info: Starting loop
+<<2019-01-02 16:46:30.730078>> Client_info: Client Disconnected
+<<2019-01-02 16:46:31.414990>> Connection: Connection from ('127.0.0.1', 33244)
+<<2019-01-02 16:46:31.460882>> Client_info: Client object started
+<<2019-01-02 16:46:31.506957>> Client_info: Starting loop
+<<2019-01-02 16:47:32.442855>> Client_info: Client Disconnected
+<<2019-01-02 16:47:33.341459>> Connection: Connection from ('127.0.0.1', 33258)
+<<2019-01-02 16:47:33.377189>> Client_info: Client object started
+<<2019-01-02 16:47:33.428138>> Client_info: Starting loop
+<<2019-01-02 16:48:33.222181>> Client_info: Client Disconnected
+<<2019-01-02 16:48:35.006299>> Connection: Connection from ('127.0.0.1', 33282)
+<<2019-01-02 16:48:35.039437>> Client_info: Client object started
+<<2019-01-02 16:48:35.082385>> Client_info: Starting loop
+<<2019-01-02 16:50:01.416794>> Client_info: Client Disconnected
+<<2019-01-02 16:52:12.234212>> Connection: Connection from ('127.0.0.1', 33326)
+<<2019-01-02 16:52:12.234426>> Client_info: Client object started
+<<2019-01-02 16:52:12.234510>> Client_info: Starting loop
+<<2019-01-02 16:52:31.714535>> Client_info: Client Disconnected
+<<2019-01-02 16:52:32.612548>> Connection: Connection from ('127.0.0.1', 33334)
+<<2019-01-02 16:52:32.660029>> Client_info: Client object started
+<<2019-01-02 16:52:32.714729>> Client_info: Starting loop
+<<2019-01-02 16:54:57.463903>> Client_info: Client Disconnected
+<<2019-01-02 16:57:47.830265>> Connection: Connection from ('127.0.0.1', 33390)
+<<2019-01-02 16:57:47.830473>> Client_info: Client object started
+<<2019-01-02 16:57:47.830542>> Client_info: Starting loop
+<<2019-01-02 16:58:22.609899>> Client_info: Client Disconnected
+<<2019-01-02 17:01:17.940983>> Connection: Connection from ('127.0.0.1', 33446)
+<<2019-01-02 17:01:17.941191>> Client_info: Client object started
+<<2019-01-02 17:01:17.941268>> Client_info: Starting loop
+<<2019-01-02 17:01:33.270259>> Client_info: Client Disconnected
+<<2019-01-02 17:01:34.369139>> Connection: Connection from ('127.0.0.1', 33450)
+<<2019-01-02 17:01:34.384599>> Client_info: Client object started
+<<2019-01-02 17:01:34.431919>> Client_info: Starting loop
+<<2019-01-02 17:02:11.907927>> Client_info: Client Disconnected
+<<2019-01-02 17:02:12.299646>> Connection: Connection from ('127.0.0.1', 33460)
+<<2019-01-02 17:02:12.320932>> Client_info: Client object started
+<<2019-01-02 17:02:12.367803>> Client_info: Starting loop
+<<2019-01-02 17:02:32.241790>> Client_info: Client Disconnected
+<<2019-01-02 17:03:50.440164>> Connection: Connection from ('127.0.0.1', 33474)
+<<2019-01-02 17:03:50.440385>> Client_info: Client object started
+<<2019-01-02 17:03:50.440482>> Client_info: Starting loop
+<<2019-01-02 17:05:27.457126>> Client_info: Client Disconnected
+<<2019-01-02 17:05:28.103116>> Connection: Connection from ('127.0.0.1', 33498)
+<<2019-01-02 17:05:28.123861>> Client_info: Client object started
+<<2019-01-02 17:05:28.169936>> Client_info: Starting loop
+<<2019-01-02 17:05:56.624123>> Client_info: Client Disconnected
+<<2019-01-02 17:05:58.192323>> Connection: Connection from ('127.0.0.1', 33504)
+<<2019-01-02 17:05:58.192651>> Client_info: Client object started
+<<2019-01-02 17:05:58.192736>> Client_info: Starting loop
+<<2019-01-02 17:06:47.851269>> Client_info: Client Disconnected
+<<2019-01-02 17:06:48.207105>> Connection: Connection from ('127.0.0.1', 33512)
+<<2019-01-02 17:06:48.243064>> Client_info: Client object started
+<<2019-01-02 17:06:48.243170>> Client_info: Starting loop
+<<2019-01-02 17:08:07.115999>> Client_info: Client Disconnected
+<<2019-01-02 17:08:07.902065>> Connection: Connection from ('127.0.0.1', 33522)
+<<2019-01-02 17:08:07.909450>> Client_info: Client object started
+<<2019-01-02 17:08:07.920485>> Client_info: Starting loop
+<<2019-01-02 17:13:27.458527>> Client_info: Client Disconnected
+<<2019-01-02 17:13:28.671011>> Connection: Connection from ('127.0.0.1', 33594)
+<<2019-01-02 17:13:28.719855>> Client_info: Client object started
+<<2019-01-02 17:13:28.777185>> Client_info: Starting loop
+<<2019-01-02 17:14:03.777828>> Client_info: Client Disconnected
+<<2019-01-02 17:16:20.680058>> Connection: Connection from ('127.0.0.1', 33630)
+<<2019-01-02 17:16:20.700773>> Client_info: Client object started
+<<2019-01-02 17:16:20.736551>> Client_info: Starting loop
+<<2019-01-02 17:19:15.832979>> Client_info: Client Disconnected
+<<2019-01-02 17:19:16.164538>> Connection: Connection from ('127.0.0.1', 33664)
+<<2019-01-02 17:19:16.180501>> Client_info: Client object started
+<<2019-01-02 17:19:16.180584>> Client_info: Starting loop
+<<2019-01-02 17:19:57.679133>> Client_info: Client Disconnected
+<<2019-01-02 17:19:58.635500>> Connection: Connection from ('127.0.0.1', 33666)
+<<2019-01-02 17:19:58.636424>> Client_info: Client object started
+<<2019-01-02 17:19:58.636511>> Client_info: Starting loop
+<<2019-01-02 17:25:03.121558>> Client_info: Client Disconnected
+<<2019-01-02 17:25:04.259360>> Connection: Connection from ('127.0.0.1', 33766)
+<<2019-01-02 17:25:04.313749>> Client_info: Client object started
+<<2019-01-02 17:25:04.329914>> Client_info: Starting loop
+<<2019-01-02 17:31:41.663079>> Client_info: Client Disconnected
+<<2019-01-02 17:31:43.770757>> Connection: Connection from ('127.0.0.1', 33810)
+<<2019-01-02 17:31:43.812658>> Client_info: Client object started
+<<2019-01-02 17:31:43.853564>> Client_info: Starting loop
+<<2019-01-02 17:34:58.568193>> Client_info: Client Disconnected
+<<2019-01-02 17:34:59.751280>> Connection: Connection from ('127.0.0.1', 33854)
+<<2019-01-02 17:34:59.751508>> Client_info: Client object started
+<<2019-01-02 17:34:59.751592>> Client_info: Starting loop
+<<2019-01-02 17:36:02.313514>> Client_info: Client Disconnected
+<<2019-01-02 17:36:32.240500>> Connection: Connection from ('127.0.0.1', 33878)
+<<2019-01-02 17:36:32.268176>> Client_info: Client object started
+<<2019-01-02 17:36:32.308770>> Client_info: Starting loop
+<<2019-01-02 17:37:47.046760>> Client_info: Client Disconnected
+<<2019-01-02 17:37:48.453065>> Connection: Connection from ('127.0.0.1', 33884)
+<<2019-01-02 17:37:48.489151>> Client_info: Client object started
+<<2019-01-02 17:37:48.548110>> Client_info: Starting loop
+<<2019-01-02 17:42:12.333756>> Client_info: Client Disconnected
+<<2019-01-02 17:42:13.560559>> Connection: Connection from ('127.0.0.1', 33944)
+<<2019-01-02 17:42:13.619888>> Client_info: Client object started
+<<2019-01-02 17:42:13.676047>> Client_info: Starting loop
+<<2019-01-02 17:42:20.983074>> Client_info: Client Disconnected
+<<2019-01-02 17:42:25.698818>> Connection: Connection from ('127.0.0.1', 33954)
+<<2019-01-02 17:42:25.731772>> Client_info: Client object started
+<<2019-01-02 17:42:25.773669>> Client_info: Starting loop
+<<2019-01-02 17:50:13.907338>> Client_info: Client Disconnected
+<<2019-01-02 17:50:14.796948>> Connection: Connection from ('127.0.0.1', 34062)
+<<2019-01-02 17:50:14.827182>> Client_info: Client object started
+<<2019-01-02 17:50:14.828383>> Client_info: Starting loop
+<<2019-01-02 18:58:39.171674>> Client_info: Client Disconnected
+<<2019-01-02 18:59:07.386964>> Connection: Connection from ('127.0.0.1', 34642)
+<<2019-01-02 18:59:07.431332>> Client_info: Client object started
+<<2019-01-02 18:59:07.462351>> Client_info: Starting loop
+<<2019-01-02 18:59:29.643451>> Client_info: Client Disconnected
+<<2019-01-02 18:59:30.140477>> Connection: Connection from ('127.0.0.1', 34648)
+<<2019-01-02 18:59:30.200226>> Client_info: Client object started
+<<2019-01-02 18:59:30.241209>> Client_info: Starting loop
+<<2019-01-02 19:00:29.062925>> Client_info: Client Disconnected
+<<2019-01-02 19:00:30.485580>> Connection: Connection from ('127.0.0.1', 34658)
+<<2019-01-02 19:00:30.485786>> Client_info: Client object started
+<<2019-01-02 19:00:30.485858>> Client_info: Starting loop
+<<2019-01-02 19:00:45.843064>> Client_info: Client Disconnected
+<<2019-01-02 19:00:46.788725>> Connection: Connection from ('127.0.0.1', 34666)
+<<2019-01-02 19:00:46.799117>> Client_info: Client object started
+<<2019-01-02 19:00:46.809488>> Client_info: Starting loop
+<<2019-01-02 19:01:23.315865>> Client_info: Client Disconnected
+<<2019-01-02 19:01:24.306752>> Connection: Connection from ('127.0.0.1', 34690)
+<<2019-01-02 19:01:24.312498>> Client_info: Client object started
+<<2019-01-02 19:01:24.312633>> Client_info: Starting loop
+<<2019-01-02 19:02:16.926915>> Client_info: Client Disconnected
+<<2019-01-02 19:02:19.068105>> Connection: Connection from ('127.0.0.1', 34694)
+<<2019-01-02 19:02:19.113802>> Client_info: Client object started
+<<2019-01-02 19:02:19.118994>> Client_info: Starting loop
+<<2019-01-02 19:03:54.148288>> Client_info: Client Disconnected
+<<2019-01-02 19:03:55.181703>> Connection: Connection from ('127.0.0.1', 34704)
+<<2019-01-02 19:03:55.181902>> Client_info: Client object started
+<<2019-01-02 19:03:55.181973>> Client_info: Starting loop
+<<2019-01-02 19:07:59.141394>> Client_info: Client Disconnected
+<<2019-01-02 19:08:00.144617>> Connection: Connection from ('127.0.0.1', 34736)
+<<2019-01-02 19:08:00.187386>> Client_info: Client object started
+<<2019-01-02 19:08:00.233527>> Client_info: Starting loop
+<<2019-01-02 19:10:39.941588>> Client_info: Client Disconnected
+<<2019-01-02 19:10:40.371124>> Connection: Connection from ('127.0.0.1', 34758)
+<<2019-01-02 19:10:40.427210>> Client_info: Client object started
+<<2019-01-02 19:10:40.473017>> Client_info: Starting loop
+<<2019-01-02 19:13:28.166750>> Client_info: Client Disconnected
+<<2019-01-02 19:13:29.244380>> Connection: Connection from ('127.0.0.1', 34798)
+<<2019-01-02 19:13:29.283238>> Client_info: Client object started
+<<2019-01-02 19:13:29.325476>> Client_info: Starting loop
+<<2019-01-02 19:16:07.945927>> Client_info: Client Disconnected
+<<2019-01-02 19:16:08.780884>> Connection: Connection from ('127.0.0.1', 34822)
+<<2019-01-02 19:16:08.781089>> Client_info: Client object started
+<<2019-01-02 19:16:08.781157>> Client_info: Starting loop
+<<2019-01-02 19:25:32.358150>> Client_info: Client Disconnected
+<<2019-01-02 19:25:33.298294>> Connection: Connection from ('127.0.0.1', 34904)
+<<2019-01-02 19:25:33.334966>> Client_info: Client object started
+<<2019-01-02 19:25:33.361660>> Client_info: Starting loop
+<<2019-01-02 19:26:33.961929>> Client_info: Client Disconnected
+<<2019-01-02 19:27:32.012531>> Connection: Connection from ('127.0.0.1', 34930)
+<<2019-01-02 19:27:32.038129>> Client_info: Client object started
+<<2019-01-02 19:27:32.079037>> Client_info: Starting loop
+<<2019-01-02 19:28:40.169950>> Client_info: Client Disconnected
+<<2019-01-02 19:28:40.982435>> Connection: Connection from ('127.0.0.1', 34946)
+<<2019-01-02 19:28:41.008048>> Client_info: Client object started
+<<2019-01-02 19:28:41.048757>> Client_info: Starting loop
+<<2019-01-02 19:29:33.530833>> Client_info: Client Disconnected
+<<2019-01-02 19:30:41.546122>> Connection: Connection from ('127.0.0.1', 34974)
+<<2019-01-02 19:30:41.588564>> Client_info: Client object started
+<<2019-01-02 19:30:41.613638>> Client_info: Starting loop
+<<2019-01-02 19:41:12.572828>> Client_info: Client Disconnected
+<<2019-01-02 19:41:19.704026>> Connection: Connection from ('127.0.0.1', 35100)
+<<2019-01-02 19:41:19.704224>> Client_info: Client object started
+<<2019-01-02 19:41:19.704297>> Client_info: Starting loop
+<<2019-01-02 19:41:54.782339>> Client_info: Client Disconnected
+<<2019-01-02 19:41:55.689099>> Connection: Connection from ('127.0.0.1', 35112)
+<<2019-01-02 19:41:55.699465>> Client_info: Client object started
+<<2019-01-02 19:41:55.704732>> Client_info: Starting loop
+<<2019-01-02 19:42:09.682089>> Client_info: Client Disconnected
+<<2019-01-02 19:42:10.838840>> Connection: Connection from ('127.0.0.1', 35118)
+<<2019-01-02 19:42:10.869552>> Client_info: Client object started
+<<2019-01-02 19:42:10.929125>> Client_info: Starting loop
+<<2019-01-02 19:42:20.334028>> Client_info: Client Disconnected
+<<2019-01-02 19:42:27.713979>> Connection: Connection from ('127.0.0.1', 35124)
+<<2019-01-02 19:42:27.740094>> Client_info: Client object started
+<<2019-01-02 19:42:27.786061>> Client_info: Starting loop
+<<2019-01-02 19:58:52.821739>> Control: Starting User Thread
+<<2019-01-02 19:58:52.822591>> Control: Entering Client Loop
+<<2019-01-02 19:58:52.828606>> Control: Start Server Thread
+<<2019-01-02 19:58:52.859452>> Control: Server Starting
+<<2019-01-02 19:58:57.069241>> Connection: Connection from ('127.0.0.1', 35486)
+<<2019-01-02 19:58:57.093404>> Client_info: Client object started
+<<2019-01-02 19:58:57.093566>> Client_info: Starting loop
+<<2019-01-02 20:43:31.753488>> Client_info: Client Disconnected
+<<2019-01-03 12:43:13.433325>> Control: Starting User Thread
+<<2019-01-03 12:43:13.434383>> Control: Start Server Thread
+<<2019-01-03 12:43:13.434342>> Control: Entering Client Loop
+<<2019-01-03 12:43:13.440112>> Control: Server Starting
+<<2019-01-03 12:43:38.011267>> Connection: Connection from ('127.0.0.1', 38604)
+<<2019-01-03 12:43:38.023267>> Client_info: Client object started
+<<2019-01-03 12:43:38.023352>> Client_info: Starting loop
+<<2019-01-03 14:50:08.237041>> Client_info: Client Disconnected
+<<2019-01-03 14:50:09.628083>> Connection: Connection from ('127.0.0.1', 39114)
+<<2019-01-03 14:50:09.628280>> Client_info: Client object started
+<<2019-01-03 14:50:09.664248>> Client_info: Starting loop
+<<2019-01-03 14:50:27.630855>> Client_info: Client Disconnected
+<<2019-01-03 14:56:35.393563>> Connection: Connection from ('127.0.0.1', 39158)
+<<2019-01-03 14:56:35.406799>> Client_info: Client object started
+<<2019-01-03 14:56:35.406900>> Client_info: Starting loop
+<<2019-01-03 14:56:43.381239>> Client_info: Client Disconnected
+<<2019-01-03 14:57:05.513661>> Connection: Connection from ('127.0.0.1', 39174)
+<<2019-01-03 14:57:05.533687>> Client_info: Client object started
+<<2019-01-03 14:57:05.534777>> Client_info: Starting loop
+<<2019-01-03 14:59:45.258862>> Client_info: Client Disconnected
+<<2019-01-03 14:59:46.260361>> Connection: Connection from ('127.0.0.1', 39212)
+<<2019-01-03 14:59:46.293554>> Client_info: Client object started
+<<2019-01-03 14:59:46.309254>> Client_info: Starting loop
+<<2019-01-03 15:00:29.484389>> Client_info: Client Disconnected
+<<2019-01-03 15:00:30.819194>> Connection: Connection from ('127.0.0.1', 39226)
+<<2019-01-03 15:00:30.834795>> Client_info: Client object started
+<<2019-01-03 15:00:30.845730>> Client_info: Starting loop
+<<2019-01-03 15:00:43.746709>> Client_info: Client Disconnected
+<<2019-01-03 15:00:55.411792>> Connection: Connection from ('127.0.0.1', 39236)
+<<2019-01-03 15:00:55.433933>> Client_info: Client object started
+<<2019-01-03 15:00:55.470906>> Client_info: Starting loop
+<<2019-01-03 15:01:07.122763>> Client_info: Client Disconnected
+<<2019-01-03 15:01:08.869886>> Connection: Connection from ('127.0.0.1', 39242)
+<<2019-01-03 15:01:08.891454>> Client_info: Client object started
+<<2019-01-03 15:01:08.891605>> Client_info: Starting loop
+<<2019-01-03 15:01:27.086600>> Client_info: Client Disconnected
+<<2019-01-03 15:01:34.088701>> Connection: Connection from ('127.0.0.1', 39248)
+<<2019-01-03 15:01:34.104189>> Client_info: Client object started
+<<2019-01-03 15:01:34.140065>> Client_info: Starting loop
+<<2019-01-03 15:02:11.359903>> Client_info: Client Disconnected
+<<2019-01-03 15:02:55.318478>> Connection: Connection from ('127.0.0.1', 39262)
+<<2019-01-03 15:02:55.323991>> Client_info: Client object started
+<<2019-01-03 15:02:55.324236>> Client_info: Starting loop
+<<2019-01-03 15:04:44.014050>> Client_info: Client Disconnected
+<<2019-01-06 14:45:49.792877>> Control: Starting User Thread
+<<2019-01-06 14:45:49.801749>> Control: Entering Client Loop
+<<2019-01-06 14:45:49.807046>> Control: Start Server Thread
+<<2019-01-06 14:45:49.838033>> Control: Server Starting
+<<2019-01-06 18:58:08.776426>> Control: Starting User Thread
+<<2019-01-06 18:58:08.776756>> Control: Entering Client Loop
+<<2019-01-06 18:58:08.776794>> Control: Start Server Thread
+<<2019-01-06 18:58:08.802791>> Control: Server Starting
+<<2019-01-06 18:58:20.046234>> Control: Starting User Thread
+<<2019-01-06 18:58:20.046588>> Control: Start Server Thread
+<<2019-01-06 18:58:20.046526>> Control: Entering Client Loop
+<<2019-01-06 18:58:20.046762>> Control: Server Starting
+<<2019-01-06 18:59:14.628107>> Control: Starting User Thread
+<<2019-01-06 18:59:14.628418>> Control: Entering Client Loop
+<<2019-01-06 18:59:14.628516>> Control: Start Server Thread
+<<2019-01-06 18:59:14.649677>> Control: Server Starting
+<<2019-01-06 18:59:46.394993>> Connection: Connection from ('127.0.0.1', 47292)
+<<2019-01-06 18:59:46.405457>> Client_info: Client object started
+<<2019-01-06 18:59:46.436069>> Client_info: Starting loop
+<<2019-01-06 18:59:46.720967>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-06 18:59:59.627619>> Connection: Connection from ('127.0.0.1', 47296)
+<<2019-01-06 18:59:59.664214>> Client_info: Client object started
+<<2019-01-06 18:59:59.689479>> Client_info: Starting loop
+<<2019-01-06 19:00:07.604382>> Connection: Connection from ('127.0.0.1', 47298)
+<<2019-01-06 19:00:07.709173>> Client_info: Client object started
+<<2019-01-06 19:00:07.831316>> Client_info: Starting loop
+<<2019-01-06 19:00:15.048242>> Connection: Connection from ('127.0.0.1', 47300)
+<<2019-01-06 19:00:15.106828>> Client_info: Client object started
+<<2019-01-06 19:00:15.161775>> Client_info: Starting loop
+<<2019-01-06 19:00:15.503046>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-06 19:02:09.466971>> Connection: Connection from ('127.0.0.1', 47316)
+<<2019-01-06 19:02:09.606689>> Client_info: Client object started
+<<2019-01-06 19:02:09.656842>> Client_info: Starting loop
+<<2019-01-06 19:02:10.138765>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-06 19:02:17.332788>> Connection: Connection from ('127.0.0.1', 47318)
+<<2019-01-06 19:02:17.333486>> Client_info: Client object started
+<<2019-01-06 19:02:17.333568>> Client_info: Starting loop
+<<2019-01-06 19:02:17.995688>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-06 19:04:54.055214>> Client_info: Client Disconnected
+<<2019-01-06 19:04:54.058992>> Client_info: Client Disconnected
+<<2019-01-06 19:04:54.078741>> Client_info: Client Disconnected
+<<2019-01-06 19:04:54.058177>> Client_info: Client Disconnected
+<<2019-01-06 19:04:54.064127>> Client_info: Client Disconnected
+<<2019-01-06 19:04:54.078826>> Client_info: Client Disconnected

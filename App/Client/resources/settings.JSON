@@ -1,6 +1,5 @@
 {
-    "log_file": "server_log.txt",
-    "file_location":"./storage/",
+    "text_editor":"kate",
     "server_port": 5678, 
     "server_address": "localhost",
     "packet_error_responce" : "{\"0\": {\"ID\": 9, \"DATA\": \"PACKET ERROR, Could not decode packet at server\"}}"

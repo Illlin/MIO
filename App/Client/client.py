@@ -1,47 +1,39 @@
+#!/usr/bin/python3.7
+
 # Sol Steele 2018
 
 # This is the game client that will run the app
 #import pygame 
 import sys
 import classes.socket_handler
+import pygame
+import classes.json_file
+
+import screens.intro
+import screens.main_menu
 
 # Set up constants for use
 size = width, height = 640, 480
 black = 0,      0,      0
 white = 255,    255,    255
 
+settings = classes.json_file.Json_file("resources/settings.JSON")
+
 # Set up PyGame Screen
 def main():
+    # Initilise pygame objects
     pygame.init()
+    pygame.font.init()
 
     screen = pygame.display.set_mode(size)
     pygame.display.set_caption('MIO')
-    clock = pygame.time.Clock()
-    
-    game_intro(screen)
-
-def game_intro():
-    intro = True
-
-    while intro:
-        for event in pygame.event.get():
-            print(event)
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                quit()
-    
-
-
+    #screens.intro.game_intro(screen, size)
+    screens.main_menu.main(screen, size, settings)
 
 def start_connection(address, port):
     connection = classes.socket_handler.Connection(address, port)
     return connection
 
 if __name__ == "__main__":
-    connection = start_connection("127.0.0.1",5678)
-    print("Connected!")
-    connection.send_que.enqueue("Data 1")
-    connection.send_que.enqueue("Item 1 ")
-    connection.send_que.enqueue("Item 2 Concatonated \",,,,,,''',','")
-
+    main()
 

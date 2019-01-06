@@ -14,14 +14,27 @@ class Connection(Thread):
         self.recv_que = classes.queue.Queue()
         self.send_que = classes.queue.Queue()
 
+        self.send = self.send_que.enqueue
+        self.recv = self.recv_que.dequeue
+
+        self.halt = False
+        self.error = ""
+        self.started = False
+
         self.start()
 
     def run(self):
-        self.connected = False
-        self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.socket.connect((self.server_address, self.server_port))
-        Recv_loop(self.socket, self.recv_que, self)
-        Send_loop(self.socket, self.send_que)
+        try:
+            self.connected = False
+            self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            self.socket.connect((self.server_address, self.server_port))
+            self.recv_loop = Recv_loop(self.socket, self.recv_que, self)
+            self.send_loop = Send_loop(self.socket, self.send_que)
+        except Exception as e:
+            self.halt = True
+            self.error = e
+        self.started = True
+        
 
     def kill(self):
         self.recv_loop.alive = False

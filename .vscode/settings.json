@@ -1,9 +1,15 @@
 {
     "python.pythonPath": "/usr/bin/python3.7",
     "cSpell.words": [
+        "Blit",
         "RDWR",
+        "authorised",
+        "bcrypt",
+        "checkpw",
+        "dejavu",
         "isdata",
         "pygame",
-        "pyglet"
+        "pyglet",
+        "rect"
     ]
 }

@@ -17,6 +17,9 @@ class Client:
         self.recv_que = classes.queue.Queue()
         self.send_que = classes.queue.Queue()
 
+        self.valid = False
+        self.user_id = None
+
         self.log("Client_info","Client object started")
 
     # Spawn threads for the loops so they are none blocking

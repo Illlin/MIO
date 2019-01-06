@@ -1,3 +1,5 @@
+# Planed to deprecate
+
 # This will be split up into 2 threads. One that will call user packets into a queue
 # and one workers that will spawn off of the queue and handle the packets from the queue.
 import classes.queue

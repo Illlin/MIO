@@ -7,6 +7,7 @@ import classes.json_file
 import classes.logger
 import classes.client
 import classes.game_loop
+import classes.user_dbms
 
 # Import libereys for threading and websockets
 
@@ -20,6 +21,9 @@ alive = True
 # load settings
 settings = classes.json_file.Json_file("settings.JSON")
 
+# Load user database
+data_base = classes.user_dbms.UserDB(settings.get_data("file_location"))
+
 # Setup loggger
 logger = classes.logger.Log(settings.get_data("log_file"))
 log = logger.log
@@ -28,8 +32,11 @@ log = logger.log
 functions = {
     "log":log,
     "settings":settings,
-    "users":users
+    "users":users,
+    "user_db":data_base
 }
+
+# Read user data base to json file object
 
 # Used when a user connects to the server
 def setup_user(socket, address):
