@@ -52,6 +52,8 @@ class Recv_loop(Thread):
     def run(self):
         while self.alive:
             data = self.socket.recv(self.buffer_size)
+            print("DATA!")
+            print(data)
             if data == b"":
                 # Socket dead as it is receiving nothing
                 self.parent.kill()

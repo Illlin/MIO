@@ -14600,3 +14600,64 @@
 <<2019-01-06 19:04:54.058177>> Client_info: Client Disconnected
 <<2019-01-06 19:04:54.064127>> Client_info: Client Disconnected
 <<2019-01-06 19:04:54.078826>> Client_info: Client Disconnected
+<<2019-01-07 08:12:54.863913>> Control: Starting User Thread
+<<2019-01-07 08:12:54.870495>> Control: Start Server Thread
+<<2019-01-07 08:12:54.870932>> Control: Server Starting
+<<2019-01-07 08:12:54.870376>> Control: Entering Client Loop
+<<2019-01-07 08:13:14.724044>> Connection: Connection from ('127.0.0.1', 56242)
+<<2019-01-07 08:13:14.726722>> Client_info: Client object started
+<<2019-01-07 08:13:14.727309>> Client_info: Starting loop
+<<2019-01-07 08:13:16.127334>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-07 08:13:35.086780>> Client_info: Client Disconnected
+<<2019-01-07 08:13:51.804779>> Connection: Connection from ('127.0.0.1', 56244)
+<<2019-01-07 08:13:51.805601>> Client_info: Client object started
+<<2019-01-07 08:13:51.806564>> Client_info: Starting loop
+<<2019-01-07 08:14:14.863260>> Client_info: Client Disconnected
+<<2019-01-07 08:32:06.896057>> Control: Starting User Thread
+<<2019-01-07 08:32:06.899784>> Control: Entering Client Loop
+<<2019-01-07 08:32:06.899970>> Control: Start Server Thread
+<<2019-01-07 08:32:06.910660>> Control: Server Starting
+<<2019-01-07 13:34:46.681577>> Control: Starting User Thread
+<<2019-01-07 13:34:46.690586>> Control: Start Server Thread
+<<2019-01-07 13:34:46.690957>> Control: Server Starting
+<<2019-01-07 13:34:46.690481>> Control: Entering Client Loop
+<<2019-01-07 13:35:02.141821>> Connection: Connection from ('127.0.0.1', 57432)
+<<2019-01-07 13:35:02.146849>> Client_info: Client object started
+<<2019-01-07 13:35:02.147526>> Client_info: Starting loop
+<<2019-01-07 13:35:03.094532>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-08 08:21:14.486614>> Control: Starting User Thread
+<<2019-01-08 08:21:14.488189>> Control: Start Server Thread
+<<2019-01-08 08:21:14.487995>> Control: Entering Client Loop
+<<2019-01-08 08:21:14.496937>> Control: Server Starting
+<<2019-01-08 08:21:46.200867>> Connection: Connection from ('127.0.0.1', 36392)
+<<2019-01-08 08:21:46.201324>> Client_info: Client object started
+<<2019-01-08 08:21:46.201626>> Client_info: Starting loop
+<<2019-01-08 08:21:47.161488>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-08 08:21:57.831758>> Connection: Connection from ('127.0.0.1', 36394)
+<<2019-01-08 08:21:57.854236>> Client_info: Client object started
+<<2019-01-08 08:21:57.854448>> Client_info: Starting loop
+<<2019-01-08 08:21:59.322321>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-08 08:21:59.480385>> Connection: Connection from ('127.0.0.1', 36396)
+<<2019-01-08 08:21:59.497885>> Client_info: Client object started
+<<2019-01-08 08:21:59.498208>> Client_info: Starting loop
+<<2019-01-08 08:22:00.782847>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-08 08:22:17.624939>> Client_info: Client Disconnected
+<<2019-01-08 08:22:17.630440>> Client_info: Client Disconnected
+<<2019-01-08 08:22:17.658487>> Client_info: Client Disconnected
+<<2019-01-08 10:22:27.190170>> Connection: Connection from ('127.0.0.1', 36916)
+<<2019-01-08 10:22:27.192052>> Client_info: Client object started
+<<2019-01-08 10:22:27.192685>> Client_info: Starting loop
+<<2019-01-08 10:22:28.259373>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-08 10:25:00.013768>> Client_info: Client Disconnected
+<<2019-01-08 14:09:34.596411>> Control: Starting User Thread
+<<2019-01-08 14:09:34.597823>> Control: Start Server Thread
+<<2019-01-08 14:09:34.597729>> Control: Entering Client Loop
+<<2019-01-08 14:09:34.598421>> Control: Server Starting
+<<2019-01-08 14:09:56.313691>> Connection: Connection from ('127.0.0.1', 38284)
+<<2019-01-08 14:09:56.314122>> Client_info: Client object started
+<<2019-01-08 14:09:56.315063>> Client_info: Starting loop
+<<2019-01-08 14:09:56.393712>> packet_error: JSON ERROR!: [{"ID": 2, "DATA]
+<<2019-01-08 14:09:56.394607>> packet_error: JSON ERROR!: [: {"email": "as]
+<<2019-01-08 14:09:56.394882>> packet_error: JSON ERROR!: [asdf", "passwor]
+<<2019-01-08 14:09:56.395135>> packet_error: JSON ERROR!: [": "asdfasdfasd]
+<<2019-01-08 14:09:56.395382>> packet_error: JSON ERROR!: ["}}]
