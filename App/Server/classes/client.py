@@ -2,7 +2,19 @@
 
 import classes.queue
 from threading import Thread    
-import json        
+import json
+
+def read_header(byte_string, protocol_size=1,bytes_size=7):
+    protocol        = byte_string[:protocol_size]
+    size            = byte_string[-bytes_size:]
+    protocol        = int.from_bytes(protocol,"big")
+    size            = int.from_bytes(size,"big")
+    return          protocol, size
+
+def make_header(protocol, data_size, protocol_size=1, bytes_size=7):
+    protocol_bytes  = int.to_bytes(protocol,protocol_size,"big")
+    size_bytes      = int.to_bytes(data_size,bytes_size,"big")
+    return protocol_bytes + size_bytes
 
 class Client:
     # Initialise all the variable for class
@@ -37,37 +49,42 @@ class Client:
 
 # Thread code to handle loop recv
 class Recv_loop(Thread):
-    def __init__(self, socket, queue, parent, log, buffer_size=4096):
+    def __init__(self, socket, queue, parent, log, header_size=8, max_buffer = 4096):
         Thread.__init__(self)
-        self.deamon=True
-        self.log = log
-        self.parent = parent
-        self.alive = True
-        self.socket = socket
-        self.queue = queue
-        self.buffer_size=buffer_size
+        self.deamon     = True
+        self.log        = log
+        self.parent     = parent
+        self.alive      = True
+        self.socket     = socket
+        self.queue      = queue
+        self.header_size= header_size
+        self.max_buffer = max_buffer
 
         self.start()
     
     def run(self):
         while self.alive:
-            data = self.socket.recv(self.buffer_size)
-            print("DATA!")
-            print(data)
-            if data == b"":
+            header = self.socket.recv(self.header_size)
+            if header == b"":
                 # Socket dead as it is receiving nothing
                 self.parent.kill()
-            data = data.decode("utf-8")
-            # Malformed JSON object. Extra depth and comma at end.
-            # eg "data 1","data 2",
-            # Remove end comma and put in [] then hand to json to unpack
-            data = "["+data[:-1]+"]"
-            try:
-                data = json.loads(data)
-                for item in data:
-                    self.queue.enqueue(item)
-            except json.decoder.JSONDecodeError:
-                self.log("packet_error", "JSON ERROR!: "+str(data))
+            protocol, data_size = read_header(header)
+            data = b""
+            # Read large data off in chunks of max buffer read size
+            while data_size >= self.max_buffer:
+                data += self.socket.recv(self.max_buffer)
+                data_size -= self.max_buffer
+            
+            # Read any remaning data if any.
+            data_size = reversed(bin(data_size)[2:])
+            for i, num in enumerate(data_size):
+                if num == "1":
+                    data += self.socket.recv(2**(i))
+
+            # Makd Dict
+            item = {"ID":protocol,"DATA":json.loads(data.decode("utf-8"))}            
+            self.queue.enqueue(item)
+
 
 # Thread code to handle loop send
 class Send_loop(Thread):
@@ -85,7 +102,7 @@ class Send_loop(Thread):
         while self.alive:
             if self.queue.isdata():
                 data = self.queue.dequeue()
-                data = json.dumps(data)
-                data = data+","
-                data = data.encode("utf-8")
-                self.socket.send(data)
+                data_string = json.dumps(data["DATA"]).encode("utf-8")
+                header = make_header(data["ID"], len(data_string))
+                self.socket.send(header)
+                self.socket.send(data_string)
