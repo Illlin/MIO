@@ -71,6 +71,7 @@ class Recv_loop(Thread):
                 # Socket dead as it is receiving nothing
                 self.parent.kill()
             protocol, data_size = read_header(header)
+
             data = b""
             # Read large data off in chunks of max buffer read size
             while data_size >= self.max_buffer:
@@ -84,7 +85,13 @@ class Recv_loop(Thread):
                     data += self.socket.recv(2**(i))
 
             # Makd Dict
-            item = {"ID":protocol,"DATA":json.loads(data.decode("utf-8"))}            
+            if protocol >= 240:
+                # Protocol in Fx block, use raw bytes for data
+                item = {"ID":protocol,"DATA":data}
+            else:            
+                # Protocol out of the Fx block, JSON decode byte string
+                item = {"ID":protocol,"DATA":json.loads(data.decode("utf-8"))}            
+            
             self.queue.enqueue(item)
 
 
