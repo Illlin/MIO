@@ -28,6 +28,8 @@ class Client:
         self.alive = True
         self.recv_que = classes.queue.Queue()
         self.send_que = classes.queue.Queue()
+        self.send = self.send_que.enqueue
+        self.recv = self.recv_que.dequeue
 
         self.valid = False
         self.user_id = None

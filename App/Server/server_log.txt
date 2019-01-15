@@ -14712,3 +14712,16 @@
 <<2019-01-10 14:15:04.750983>> Client_info: Starting loop
 <<2019-01-10 14:15:06.144993>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
 <<2019-01-11 08:11:16.965313>> Client_info: Client Disconnected
+<<2019-01-04 08:42:24.210852>> Control: Starting User Thread
+<<2019-01-04 08:42:24.218923>> Control: Start Server Thread
+<<2019-01-04 08:42:24.218696>> Control: Entering Client Loop
+<<2019-01-04 08:42:24.225191>> Control: Server Starting
+<<2019-01-04 10:16:44.609604>> Control: Starting User Thread
+<<2019-01-04 10:16:44.610755>> Control: Entering Client Loop
+<<2019-01-04 10:16:44.610843>> Control: Start Server Thread
+<<2019-01-04 10:16:44.627068>> Control: Server Starting
+<<2019-01-04 10:17:32.902950>> Connection: Connection from ('127.0.0.1', 60482)
+<<2019-01-04 10:17:32.903387>> Client_info: Client object started
+<<2019-01-04 10:17:32.903594>> Client_info: Starting loop
+<<2019-01-04 10:17:33.966353>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-04 10:21:34.370216>> Client_info: Client Disconnected
