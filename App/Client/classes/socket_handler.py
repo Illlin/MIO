@@ -75,6 +75,7 @@ class Recv_loop(Thread):
                 # Socket dead as it is receiving nothing
                 self.parent.kill()
             protocol, data_size = read_header(header)
+
             data = b""
             # Read large data off in chunks of max buffer read size
             while data_size >= self.max_buffer:
@@ -87,8 +88,14 @@ class Recv_loop(Thread):
                 if num == "1":
                     data += self.socket.recv(2**(i))
 
-            # Makd Dict
-            item = {"ID":protocol,"DATA":json.loads(data.decode("utf-8"))}          
+            # Make Dict
+            if protocol >= 200:
+                # Protocol in Fx block, use raw bytes for data
+                item = {"ID":protocol,"DATA":data}
+            else:            
+                # Protocol out of the Fx block, JSON decode byte string
+                item = {"ID":protocol,"DATA":json.loads(data.decode("utf-8"))}            
+            
             self.queue.enqueue(item)
 
 
@@ -108,7 +115,12 @@ class Send_loop(Thread):
         while self.alive:
             if self.queue.isdata():
                 data = self.queue.dequeue()
-                data_string = json.dumps(data["DATA"]).encode("utf-8")
-                header = make_header(data["ID"], len(data_string))
+
+                # ID is above 200 so the data should already be bytes
+                if data["ID"] >= 200:
+                    data_bytes = data["DATA"]
+                else:
+                    data_bytes = json.dumps(data["DATA"]).encode("utf-8")
+                header = make_header(data["ID"], len(data_bytes))
                 self.socket.send(header)
-                self.socket.send(data_string)
+                self.socket.send(data_bytes)

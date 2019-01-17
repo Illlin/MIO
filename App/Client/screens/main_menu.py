@@ -4,7 +4,7 @@ import classes.connection
 import pygame
 import classes.pygame.button
 import classes.pygame.text_line
-
+import classes.pygame.functions
 import screens.login
 
 
@@ -76,38 +76,13 @@ def main(screen, size, settings):
         gui["menu_font"],
         (24,24,24),
         (255,255,255),
-        pygame.quit
+        classes.pygame.functions.quit_all
     )
 
 
     while True:
         for event in pygame.event.get():
-            print(event)
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                quit()
-
-            if event.type == pygame.MOUSEBUTTONDOWN:
-                for button in gui["buttons"]:
-                    if gui["buttons"][button].pressed(event.pos):
-                        gui["buttons"][button].run_function(gui)
-                for text in gui["texts"]:
-                    if gui["texts"][text].pressed(event.pos):
-                        gui["texts"][text].click(event.pos)
-                    else:
-                        gui["texts"][text].focus = False
-
-            if event.type == pygame.MOUSEMOTION:
-                for button in gui["buttons"]:
-                    if gui["buttons"][button].pressed(event.pos):
-                        gui["buttons"][button].hover = True
-                    else:
-                        gui["buttons"][button].hover = False
-
-            if event.type == pygame.KEYDOWN:
-                for text in gui["texts"]:
-                    if gui["texts"][text].focus:
-                        gui["texts"][text].add_char(event.unicode, event.key, event.mod)
+            classes.pygame.functions.gui_event_handle(event, gui)
 
         # Begin screen draw function
         screen.fill((0,0,0))
@@ -119,11 +94,7 @@ def main(screen, size, settings):
             (int(width/2 - textsurface.get_width()/2),int(height*0.1 - textsurface.get_height()/2))
         )
 
-        for button in gui["buttons"]:
-            gui["buttons"][button].draw(screen)
-
-        for text in gui["texts"]:
-            gui["texts"][text].draw(screen)
+        classes.pygame.functions.gui_draw(gui)
 
 
         pygame.display.update()

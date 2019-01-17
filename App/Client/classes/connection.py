@@ -3,6 +3,7 @@ import classes.socket_handler
 
 class Connection:
     def __init__(self, ip, port):
+        self.alive = True
         self.connected = False
         self.ip = ip
         self.port = port
@@ -11,6 +12,8 @@ class Connection:
         self.send = None
         self.recv = None
         self.error = ""
+
+        self.user_id = None
 
     def connect(self):
         self.connection = classes.socket_handler.Connection(self.ip, self.port)
@@ -31,3 +34,9 @@ class Connection:
         while get == None:
             get = self.recv()
         return get
+
+    def kill(self):
+        self.alive = False
+        self.connection.send_loop.alive = False
+        self.connection.recv_loop.alive = False
+        self.connection.socket.shutdown(2) # socket.SHUT_RDWR (Evaluated to save an import)

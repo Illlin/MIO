@@ -1,5 +1,3 @@
-# The main menu of the game.
-
 import classes.connection
 import pygame
 import classes.pygame.button
@@ -7,114 +5,49 @@ import classes.pygame.text_line
 import classes.pygame.box
 import classes.pygame.functions
 import classes.pygame.popup as popup
-import screens.verify
-
-def register(gui):
-    # Set up connection Class
-    connection = classes.connection.Connection(
-        gui["settings"].get_data("server_address"),
-        gui["settings"].get_data("server_port")
-    )
-
-    # Try and initiate socket with server
-    try:
-        connection.connect()
-    except Exception as error:
-        if error.errno in [111, -2]:
-            print("Connection Error")
-        else:
-            print(error)
-        return error.errno
-
-    email    = gui["texts"]["email"].text
-    password = gui["texts"]["password"].text
-
-    packet = {
-        "ID":   3, #SET UP ACCOUNT
-        "DATA":{
-            "email":    email,
-            "password": password
-        }
-    }
-    connection.send(packet)
-    responce = connection.wait_recv()
-    while responce["ID"] != 3:
-        responce = connection.wait_recv()
-    print(responce)
-    popup.popup(responce["DATA"]["responce"])
-    if responce["DATA"]["success"]:
-        screens.verify.main(gui)
-    
-
-
-
-
-
-def login(gui):
-    # Set up connection Class
-    connection = classes.connection.Connection(
-        gui["settings"].get_data("server_address"),
-        gui["settings"].get_data("server_port")
-    )
-    
-    # Try and initiate socket with server
-    try:
-        connection.connect()
-    except Exception as error:
-        if error.errno in [111, -2]:
-            print("Connection Error")
-        else:
-            print(error)
-        return error.errno
-
-    email    = gui["texts"]["email"].text
-    password = gui["texts"]["password"].text
-
-    # Packet for login
-    packet = {
-        "ID":   2, #LOGIN ID
-        "DATA":{
-            "email":    email,
-            "password": password
-        }
-    }
-    connection.send(packet)
-
-    # Get login packet from server
-    responce = connection.wait_recv()
-    print(responce)
-    while responce["ID"] != 2:
-        print("waiting")
-        responce = connection.wait_recv()
-
-    
-    if responce["DATA"]["success"] == True:
-        width, height = gui["size"]
-        connection.user_id = responce["DATA"]["ID"]
-        gui["connection"] = connection
-        gui["exit"] = True
-        gui["ext_gui"]["connection"] = connection
-        gui["ext_gui"]["buttons"]["Sign In"] = classes.pygame.button.Button(
-            (int(width*0.1),int(height*0.2)),
-            int(width*0.8),
-            int(height*0.1),
-            "Play Game",
-            gui["menu_font"],
-            (24,24,24),
-            (255,255,255),
-            print
-        )
-    else:
-        popup.popup(responce["DATA"]["responce"])
-        if responce["DATA"]["success"] == "verify":
-            screens.verify.main(gui)
-    print(responce)
-    return
-    
-
 
 def back(gui):
     gui["exit"] = True
+
+def verify(gui):
+    # Set up connection Class
+    connection = classes.connection.Connection(
+        gui["settings"].get_data("server_address"),
+        gui["settings"].get_data("server_port")
+    )
+    
+    # Try and initiate socket with server
+    try:
+        connection.connect()
+    except Exception as error:
+        if error.errno in [111, -2]:
+            print("Connection Error")
+        else:
+            print(error)
+        return error.errno
+
+    email    = gui["texts"]["email"].text
+    password = gui["texts"]["password"].text
+    code     = gui["texts"]["code"].text
+
+
+    # Packet for login
+    packet = {
+        "ID":   4, #LOGIN ID
+        "DATA":{
+            "email":    email,
+            "password": password,
+            "code":     code
+        }
+    }
+    connection.send(packet)
+    responce = connection.wait_recv()
+    while responce["ID"] != 4:
+        responce = connection.wait_recv()
+    popup.popup(responce["DATA"]["responce"])
+    if responce["DATA"]["success"] == True:
+        back(gui)
+    
 
 
 def main(gui_in):
@@ -178,15 +111,24 @@ def main(gui_in):
         password=True
     )
 
-    gui["buttons"]["login"] = classes.pygame.button.Button(
+    gui["boxes"]["code"] = classes.pygame.box.Box(
         (int(width*0.1),int(height*(start+0.3))),
-        int(width*0.8),
+        int(width*0.2),
         int(height*0.1),
-        "Sign In",
+        "Code",
         gui["menu_font"],
         (24,24,24),
         (255,255,255),
-        login
+    )
+
+    gui["texts"]["code"] = classes.pygame.text_line.Text_input(
+        (int(width*0.35),int(height*(start+0.3))),
+        int(width*0.55),
+        int(height*0.1),
+        gui["menu_font"],
+        (24,24,24),
+        (255,255,255),
+        print
     )
 
     gui["buttons"]["register"] = classes.pygame.button.Button(
@@ -197,7 +139,7 @@ def main(gui_in):
         gui["menu_font"],
         (24,24,24),
         (255,255,255),
-        register
+        verify
     )
 
     gui["buttons"]["back"] = classes.pygame.button.Button(
@@ -210,6 +152,9 @@ def main(gui_in):
         (255,255,255),
         back
     )
+
+    gui["texts"]["email"].text = gui_in["texts"]["email"].text
+    gui["texts"]["password"].text = gui_in["texts"]["password"].text
 
 
     while True:
@@ -238,4 +183,3 @@ def main(gui_in):
 
 
         pygame.display.update()
-    
