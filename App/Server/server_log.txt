@@ -14725,3 +14725,328 @@
 <<2019-01-04 10:17:32.903594>> Client_info: Starting loop
 <<2019-01-04 10:17:33.966353>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
 <<2019-01-04 10:21:34.370216>> Client_info: Client Disconnected
+<<2019-01-15 15:41:49.336050>> Control: Starting User Thread
+<<2019-01-15 15:41:49.336308>> Control: Entering Client Loop
+<<2019-01-15 15:41:49.336339>> Control: Start Server Thread
+<<2019-01-15 15:41:49.358952>> Control: Server Starting
+<<2019-01-15 15:42:16.781873>> Connection: Connection from ('127.0.0.1', 34284)
+<<2019-01-15 15:42:16.827818>> Client_info: Client object started
+<<2019-01-15 15:42:16.878668>> Client_info: Starting loop
+<<2019-01-15 15:42:17.226117>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-15 15:43:34.430456>> Client_info: Client Disconnected
+<<2019-01-15 16:01:08.934451>> Connection: Connection from ('127.0.0.1', 34482)
+<<2019-01-15 16:01:08.975420>> Client_info: Client object started
+<<2019-01-15 16:01:09.028003>> Client_info: Starting loop
+<<2019-01-15 16:01:09.416764>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-15 16:21:58.164836>> Client_info: Client Disconnected
+<<2019-01-15 16:22:05.896099>> Connection: Connection from ('127.0.0.1', 34750)
+<<2019-01-15 16:22:05.906462>> Client_info: Client object started
+<<2019-01-15 16:22:05.957382>> Client_info: Starting loop
+<<2019-01-15 16:22:08.025992>> Connection: Connection from ('127.0.0.1', 34752)
+<<2019-01-15 16:22:08.063049>> Client_info: Client object started
+<<2019-01-15 16:22:08.084856>> Client_info: Starting loop
+<<2019-01-15 16:22:08.542034>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-15 16:22:11.403958>> Connection: Connection from ('127.0.0.1', 34754)
+<<2019-01-15 16:22:11.472103>> Client_info: Client object started
+<<2019-01-15 16:22:11.584654>> Client_info: Starting loop
+<<2019-01-15 16:22:23.496505>> Client_info: Client Disconnected
+<<2019-01-15 16:22:23.496163>> Client_info: Client Disconnected
+<<2019-01-15 16:22:23.501737>> Client_info: Client Disconnected
+<<2019-01-15 16:23:43.555427>> Connection: Connection from ('127.0.0.1', 34776)
+<<2019-01-15 16:23:43.555623>> Client_info: Client object started
+<<2019-01-15 16:23:43.555708>> Client_info: Starting loop
+<<2019-01-15 16:23:46.059734>> Connection: Connection from ('127.0.0.1', 34778)
+<<2019-01-15 16:23:46.091580>> Client_info: Client object started
+<<2019-01-15 16:23:46.096800>> Client_info: Starting loop
+<<2019-01-15 16:23:46.987035>> Connection: Connection from ('127.0.0.1', 34780)
+<<2019-01-15 16:23:47.056075>> Client_info: Client object started
+<<2019-01-15 16:23:47.077533>> Client_info: Starting loop
+<<2019-01-15 16:23:47.707731>> Connection: Connection from ('127.0.0.1', 34782)
+<<2019-01-15 16:23:47.771764>> Client_info: Client object started
+<<2019-01-15 16:23:47.950761>> Client_info: Starting loop
+<<2019-01-15 16:24:02.765592>> Connection: Connection from ('127.0.0.1', 34786)
+<<2019-01-15 16:24:02.781426>> Client_info: Client object started
+<<2019-01-15 16:24:02.915380>> Client_info: Starting loop
+<<2019-01-15 16:24:03.519397>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-15 16:24:19.698126>> Client_info: Client Disconnected
+<<2019-01-15 16:24:19.865068>> Client_info: Client Disconnected
+<<2019-01-15 16:24:19.698222>> Client_info: Client Disconnected
+<<2019-01-15 16:24:19.704598>> Client_info: Client Disconnected
+<<2019-01-15 16:24:19.698258>> Client_info: Client Disconnected
+<<2019-01-15 16:26:13.484349>> Connection: Connection from ('127.0.0.1', 34810)
+<<2019-01-15 16:26:13.525671>> Client_info: Client object started
+<<2019-01-15 16:26:13.541109>> Client_info: Starting loop
+<<2019-01-15 16:26:13.889759>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-15 16:26:22.256529>> Client_info: Client Disconnected
+<<2019-01-15 16:26:46.545226>> Connection: Connection from ('127.0.0.1', 34828)
+<<2019-01-15 16:26:46.586332>> Client_info: Client object started
+<<2019-01-15 16:26:46.621977>> Client_info: Starting loop
+<<2019-01-15 16:26:46.984805>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-15 16:26:48.240148>> Client_info: Client Disconnected
+<<2019-01-15 17:24:31.097900>> Control: Starting Email Session
+<<2019-01-15 17:25:19.913968>> Control: Starting Email Session
+<<2019-01-15 17:25:29.292157>> Control: Starting User Thread
+<<2019-01-15 17:25:29.292737>> Control: Entering Client Loop
+<<2019-01-15 17:25:29.292822>> Control: Start Server Thread
+<<2019-01-15 17:25:29.303660>> Control: Server Starting
+<<2019-01-15 19:01:31.459559>> Control: Starting Email Session
+<<2019-01-15 19:01:43.817222>> Control: Starting User Thread
+<<2019-01-15 19:01:43.817613>> Control: Start Server Thread
+<<2019-01-15 19:01:43.817577>> Control: Entering Client Loop
+<<2019-01-15 19:01:43.817808>> Control: Server Starting
+<<2019-01-15 19:01:49.059837>> Connection: Connection from ('127.0.0.1', 36352)
+<<2019-01-15 19:01:49.116227>> Client_info: Client object started
+<<2019-01-15 19:01:49.167759>> Client_info: Starting loop
+<<2019-01-15 19:02:07.507736>> Connection: Connection from ('127.0.0.1', 36356)
+<<2019-01-15 19:02:07.556172>> Client_info: Client object started
+<<2019-01-15 19:02:07.651083>> Client_info: Starting loop
+<<2019-01-15 19:03:27.668143>> Client_info: Client Disconnected
+<<2019-01-15 19:03:27.678996>> Client_info: Client Disconnected
+<<2019-01-15 19:33:09.763752>> Connection: Connection from ('127.0.0.1', 36560)
+<<2019-01-15 19:33:09.799511>> Client_info: Client object started
+<<2019-01-15 19:33:09.855926>> Client_info: Starting loop
+<<2019-01-15 19:33:25.370940>> Connection: Connection from ('127.0.0.1', 36564)
+<<2019-01-15 19:33:25.381354>> Client_info: Client object started
+<<2019-01-15 19:33:25.414984>> Client_info: Starting loop
+<<2019-01-15 19:33:25.829865>> Client_Connect: smZ1HlxzAmeJ9BEkaY52N8738izEYlLJ Connected.
+<<2019-01-15 19:33:29.468109>> Client_info: Client Disconnected
+<<2019-01-15 19:33:47.547985>> Client_info: Client Disconnected
+<<2019-01-16 13:01:57.968155>> Control: Starting Email Session
+<<2019-01-16 13:02:17.433315>> Control: Starting User Thread
+<<2019-01-16 13:02:17.433795>> Control: Entering Client Loop
+<<2019-01-16 13:02:17.433862>> Control: Start Server Thread
+<<2019-01-16 13:02:17.475496>> Control: Server Starting
+<<2019-01-16 13:02:44.573224>> Connection: Connection from ('127.0.0.1', 39128)
+<<2019-01-16 13:02:44.598896>> Client_info: Client object started
+<<2019-01-16 13:02:44.614423>> Client_info: Starting loop
+<<2019-01-16 13:03:35.420740>> Control: Starting Email Session
+<<2019-01-16 13:03:44.564897>> Control: Starting User Thread
+<<2019-01-16 13:03:44.565487>> Control: Entering Client Loop
+<<2019-01-16 13:03:44.573150>> Control: Start Server Thread
+<<2019-01-16 13:03:44.588675>> Control: Server Starting
+<<2019-01-16 13:03:58.868915>> Connection: Connection from ('127.0.0.1', 39144)
+<<2019-01-16 13:03:58.894516>> Client_info: Client object started
+<<2019-01-16 13:03:58.909922>> Client_info: Starting loop
+<<2019-01-16 13:04:31.317282>> Client_info: Client Disconnected
+<<2019-01-16 13:06:49.403588>> Control: Starting Email Session
+<<2019-01-16 13:06:59.002982>> Control: Starting User Thread
+<<2019-01-16 13:06:59.003852>> Control: Entering Client Loop
+<<2019-01-16 13:06:59.003915>> Control: Start Server Thread
+<<2019-01-16 13:06:59.028678>> Control: Server Starting
+<<2019-01-16 13:07:21.676144>> Connection: Connection from ('127.0.0.1', 39226)
+<<2019-01-16 13:07:21.701754>> Client_info: Client object started
+<<2019-01-16 13:07:21.737425>> Client_info: Starting loop
+<<2019-01-16 13:10:43.155229>> Control: Starting Email Session
+<<2019-01-16 13:10:53.003330>> Control: Starting User Thread
+<<2019-01-16 13:10:53.003728>> Control: Entering Client Loop
+<<2019-01-16 13:10:53.013129>> Control: Start Server Thread
+<<2019-01-16 13:10:53.030171>> Control: Server Starting
+<<2019-01-16 13:11:21.582618>> Connection: Connection from ('127.0.0.1', 39280)
+<<2019-01-16 13:11:21.593035>> Client_info: Client object started
+<<2019-01-16 13:11:21.623700>> Client_info: Starting loop
+<<2019-01-16 13:12:18.477329>> Control: Starting Email Session
+<<2019-01-16 13:12:32.037592>> Control: Starting User Thread
+<<2019-01-16 13:12:32.038147>> Control: Entering Client Loop
+<<2019-01-16 13:12:32.038228>> Control: Start Server Thread
+<<2019-01-16 13:12:32.049204>> Control: Server Starting
+<<2019-01-16 13:12:50.053264>> Connection: Connection from ('127.0.0.1', 39292)
+<<2019-01-16 13:12:50.083957>> Client_info: Client object started
+<<2019-01-16 13:12:50.089170>> Client_info: Starting loop
+<<2019-01-16 13:55:21.814413>> Control: Starting Email Session
+<<2019-01-16 13:55:30.064979>> Control: Starting User Thread
+<<2019-01-16 13:55:30.065559>> Control: Entering Client Loop
+<<2019-01-16 13:55:30.065657>> Control: Start Server Thread
+<<2019-01-16 13:55:30.081559>> Control: Server Starting
+<<2019-01-16 13:55:42.396531>> Connection: Connection from ('127.0.0.1', 39622)
+<<2019-01-16 13:55:42.422306>> Client_info: Client object started
+<<2019-01-16 13:55:42.432765>> Client_info: Starting loop
+<<2019-01-16 13:55:42.745810>> Client_Connect: DD8yyAZpDr2g8-A1QDjsGlyRhP=Rv4-y Connected.
+<<2019-01-16 15:11:14.528613>> Control: Starting Email Session
+<<2019-01-16 15:11:23.522906>> Control: Starting User Thread
+<<2019-01-16 15:11:23.523449>> Control: Entering Client Loop
+<<2019-01-16 15:11:23.523530>> Control: Start Server Thread
+<<2019-01-16 15:11:23.534332>> Control: Server Starting
+<<2019-01-16 15:11:44.254265>> Connection: Connection from ('127.0.0.1', 40288)
+<<2019-01-16 15:11:44.254466>> Client_info: Client object started
+<<2019-01-16 15:11:44.254541>> Client_info: Starting loop
+<<2019-01-16 15:11:44.621312>> Client_Connect: None Connected. Need Verification
+<<2019-01-16 15:13:02.955255>> Control: Starting Email Session
+<<2019-01-16 15:13:12.059355>> Control: Starting User Thread
+<<2019-01-16 15:13:12.059948>> Control: Entering Client Loop
+<<2019-01-16 15:13:12.060041>> Control: Start Server Thread
+<<2019-01-16 15:13:12.081378>> Control: Server Starting
+<<2019-01-16 15:13:25.733800>> Connection: Connection from ('127.0.0.1', 40312)
+<<2019-01-16 15:13:25.759546>> Client_info: Client object started
+<<2019-01-16 15:13:25.790158>> Client_info: Starting loop
+<<2019-01-16 15:13:26.110360>> Client_Connect: None Connected. Need Verification
+<<2019-01-16 15:13:37.029991>> Client_info: Client Disconnected
+<<2019-01-16 15:14:53.071558>> Connection: Connection from ('127.0.0.1', 40340)
+<<2019-01-16 15:14:53.092097>> Client_info: Client object started
+<<2019-01-16 15:14:53.117727>> Client_info: Starting loop
+<<2019-01-16 15:14:53.387086>> Client_Connect: None Connected. Need Verification
+<<2019-01-16 15:15:07.542636>> Client_info: Client Disconnected
+<<2019-01-16 15:15:35.357017>> Control: Starting Email Session
+<<2019-01-16 15:15:44.319595>> Control: Starting User Thread
+<<2019-01-16 15:15:44.320230>> Control: Entering Client Loop
+<<2019-01-16 15:15:44.320314>> Control: Start Server Thread
+<<2019-01-16 15:15:44.320788>> Control: Server Starting
+<<2019-01-16 15:15:55.536544>> Connection: Connection from ('127.0.0.1', 40354)
+<<2019-01-16 15:15:55.557271>> Client_info: Client object started
+<<2019-01-16 15:15:55.567765>> Client_info: Starting loop
+<<2019-01-16 15:15:55.889808>> Client_Connect: None Connected. Need Verification
+<<2019-01-16 15:17:17.030011>> Client_info: Client Disconnected
+<<2019-01-16 15:17:29.881759>> Connection: Connection from ('127.0.0.1', 40370)
+<<2019-01-16 15:17:29.902336>> Client_info: Client object started
+<<2019-01-16 15:17:29.917869>> Client_info: Starting loop
+<<2019-01-16 15:17:30.279148>> Client_Connect: None Connected. Need Verification
+<<2019-01-16 15:17:59.342935>> Connection: Connection from ('127.0.0.1', 40392)
+<<2019-01-16 15:17:59.410337>> Client_info: Client object started
+<<2019-01-16 15:17:59.475705>> Client_info: Starting loop
+<<2019-01-16 15:17:59.506293>> Server_Error: Error in Validate queue: string indices must be integers
+<<2019-01-16 15:23:23.780523>> Control: Starting Email Session
+<<2019-01-16 15:23:33.502732>> Control: Starting User Thread
+<<2019-01-16 15:23:33.503341>> Control: Entering Client Loop
+<<2019-01-16 15:23:33.503420>> Control: Start Server Thread
+<<2019-01-16 15:23:33.514216>> Control: Server Starting
+<<2019-01-16 15:23:52.261177>> Connection: Connection from ('127.0.0.1', 40484)
+<<2019-01-16 15:23:52.297434>> Client_info: Client object started
+<<2019-01-16 15:23:52.323142>> Client_info: Starting loop
+<<2019-01-16 15:23:52.641196>> Client_Connect: None Connected. Need Verification
+<<2019-01-16 15:25:42.009245>> Client_info: Client Disconnected
+<<2019-01-16 15:25:55.062548>> Connection: Connection from ('127.0.0.1', 40496)
+<<2019-01-16 15:25:55.067894>> Client_info: Client object started
+<<2019-01-16 15:25:55.068005>> Client_info: Starting loop
+<<2019-01-16 15:25:55.391240>> Client_Connect: None Connected. Need Verification
+<<2019-01-16 15:26:15.482911>> Connection: Connection from ('127.0.0.1', 40498)
+<<2019-01-16 15:26:15.550473>> Client_info: Client object started
+<<2019-01-16 15:26:15.573027>> Client_info: Starting loop
+<<2019-01-16 15:27:09.852591>> Control: Starting Email Session
+<<2019-01-16 15:27:20.997583>> Control: Starting User Thread
+<<2019-01-16 15:27:20.998251>> Control: Entering Client Loop
+<<2019-01-16 15:27:21.004588>> Control: Start Server Thread
+<<2019-01-16 15:27:21.040438>> Control: Server Starting
+<<2019-01-16 15:27:41.813695>> Connection: Connection from ('127.0.0.1', 40520)
+<<2019-01-16 15:27:41.840437>> Client_info: Client object started
+<<2019-01-16 15:27:41.876291>> Client_info: Starting loop
+<<2019-01-16 15:27:42.228024>> Client_Connect: None Connected. Need Verification
+<<2019-01-16 15:27:56.768708>> Connection: Connection from ('127.0.0.1', 40522)
+<<2019-01-16 15:27:56.832215>> Client_info: Client object started
+<<2019-01-16 15:27:56.832518>> Client_info: Starting loop
+<<2019-01-16 15:28:30.125226>> Control: Starting Email Session
+<<2019-01-16 15:30:15.779451>> Control: Starting Email Session
+<<2019-01-16 15:30:38.502061>> Control: Starting User Thread
+<<2019-01-16 15:30:38.502419>> Control: Entering Client Loop
+<<2019-01-16 15:30:38.502459>> Control: Start Server Thread
+<<2019-01-16 15:30:38.508878>> Control: Server Starting
+<<2019-01-16 15:30:54.413233>> Connection: Connection from ('127.0.0.1', 40560)
+<<2019-01-16 15:30:54.437296>> Client_info: Client object started
+<<2019-01-16 15:30:54.468005>> Client_info: Starting loop
+<<2019-01-16 15:30:54.781301>> Client_Connect: DD8yyAZpDr2g8-A1QDjsGlyRhP=Rv4-y Connected.
+<<2019-01-16 15:31:25.750132>> Client_info: Client Disconnected
+<<2019-01-16 15:31:36.973967>> Connection: Connection from ('127.0.0.1', 40566)
+<<2019-01-16 15:31:36.994496>> Client_info: Client object started
+<<2019-01-16 15:31:37.035382>> Client_info: Starting loop
+<<2019-01-16 15:31:37.120404>> Client_Connect: Account register None
+<<2019-01-16 15:33:26.907306>> Client_info: Client Disconnected
+<<2019-01-16 15:33:36.975138>> Connection: Connection from ('127.0.0.1', 40600)
+<<2019-01-16 15:33:37.000978>> Client_info: Client object started
+<<2019-01-16 15:33:37.031855>> Client_info: Starting loop
+<<2019-01-16 15:33:37.078143>> Client_Connect: Account register None
+<<2019-01-16 15:34:19.280353>> Client_info: Client Disconnected
+<<2019-01-16 15:34:30.395953>> Connection: Connection from ('127.0.0.1', 40616)
+<<2019-01-16 15:34:30.427557>> Client_info: Client object started
+<<2019-01-16 15:34:30.473517>> Client_info: Starting loop
+<<2019-01-16 15:36:32.054689>> Control: Starting Email Session
+<<2019-01-16 15:36:44.961829>> Control: Starting User Thread
+<<2019-01-16 15:36:44.962261>> Control: Start Server Thread
+<<2019-01-16 15:36:44.962218>> Control: Entering Client Loop
+<<2019-01-16 15:36:44.962499>> Control: Server Starting
+<<2019-01-16 15:36:59.682367>> Connection: Connection from ('127.0.0.1', 40662)
+<<2019-01-16 15:36:59.682585>> Client_info: Client object started
+<<2019-01-16 15:36:59.687781>> Client_info: Starting loop
+<<2019-01-16 15:37:18.492159>> Control: Starting Email Session
+<<2019-01-16 15:37:36.713807>> Control: Starting Email Session
+<<2019-01-16 15:37:45.258355>> Control: Starting User Thread
+<<2019-01-16 15:37:45.259306>> Control: Entering Client Loop
+<<2019-01-16 15:37:45.265169>> Control: Start Server Thread
+<<2019-01-16 15:37:45.285644>> Control: Server Starting
+<<2019-01-16 15:37:52.162760>> Connection: Connection from ('127.0.0.1', 40674)
+<<2019-01-16 15:37:52.193767>> Client_info: Client object started
+<<2019-01-16 15:37:52.219430>> Client_info: Starting loop
+<<2019-01-16 15:37:52.277263>> Client_Connect: Account register None
+<<2019-01-16 15:38:08.290532>> Connection: Connection from ('127.0.0.1', 40676)
+<<2019-01-16 15:38:08.328111>> Client_info: Client object started
+<<2019-01-16 15:38:08.373179>> Client_info: Starting loop
+<<2019-01-16 15:38:08.486725>> Client_Connect: Account register None
+<<2019-01-16 15:38:10.468608>> Connection: Connection from ('127.0.0.1', 40678)
+<<2019-01-16 15:38:10.489906>> Client_info: Client object started
+<<2019-01-16 15:38:10.490007>> Client_info: Starting loop
+<<2019-01-16 15:38:10.936083>> Client_Connect: DD8yyAZpDr2g8-A1QDjsGlyRhP=Rv4-y Connected.
+<<2019-01-16 15:38:44.181112>> Client_info: Client Disconnected
+<<2019-01-16 15:38:51.251190>> Client_info: Client Disconnected
+<<2019-01-16 15:38:51.266650>> Client_info: Client Disconnected
+<<2019-01-16 15:41:17.223232>> Connection: Connection from ('127.0.0.1', 40730)
+<<2019-01-16 15:41:17.248869>> Client_info: Client object started
+<<2019-01-16 15:41:17.284662>> Client_info: Starting loop
+<<2019-01-16 15:41:19.605191>> Connection: Connection from ('127.0.0.1', 40732)
+<<2019-01-16 15:41:19.627907>> Client_info: Client object started
+<<2019-01-16 15:41:19.645321>> Client_info: Starting loop
+<<2019-01-16 15:41:21.497824>> Client_Connect: Account register None
+<<2019-01-16 15:41:33.891739>> Connection: Connection from ('127.0.0.1', 40736)
+<<2019-01-16 15:41:33.952127>> Client_info: Client object started
+<<2019-01-16 15:41:34.034263>> Client_info: Starting loop
+<<2019-01-16 15:41:34.520065>> Client_Connect: Account code verification
+<<2019-01-16 15:42:36.025880>> Control: Starting Email Session
+<<2019-01-16 15:42:55.031731>> Control: Starting Email Session
+<<2019-01-16 15:43:02.125885>> Control: Starting User Thread
+<<2019-01-16 15:43:02.126522>> Control: Entering Client Loop
+<<2019-01-16 15:43:02.132421>> Control: Start Server Thread
+<<2019-01-16 15:43:02.170327>> Control: Server Starting
+<<2019-01-16 15:43:22.832259>> Connection: Connection from ('127.0.0.1', 40762)
+<<2019-01-16 15:43:22.873271>> Client_info: Client object started
+<<2019-01-16 15:43:22.914218>> Client_info: Starting loop
+<<2019-01-16 15:43:24.789680>> Connection: Connection from ('127.0.0.1', 40764)
+<<2019-01-16 15:43:24.845676>> Client_info: Client object started
+<<2019-01-16 15:43:24.845799>> Client_info: Starting loop
+<<2019-01-16 15:43:26.530598>> Client_Connect: Account register None
+<<2019-01-16 15:43:42.597173>> Connection: Connection from ('127.0.0.1', 40780)
+<<2019-01-16 15:43:42.655911>> Client_info: Client object started
+<<2019-01-16 15:43:42.725566>> Client_info: Starting loop
+<<2019-01-16 15:43:43.169411>> Client_Connect: None Connected. Need Verification
+<<2019-01-16 15:43:55.488912>> Connection: Connection from ('127.0.0.1', 40782)
+<<2019-01-16 15:43:55.614327>> Client_info: Client object started
+<<2019-01-16 15:43:55.773212>> Client_info: Starting loop
+<<2019-01-16 15:43:56.261172>> Client_Connect: None Connected. Need Verification
+<<2019-01-16 15:44:06.027731>> Connection: Connection from ('127.0.0.1', 40784)
+<<2019-01-16 15:44:06.150123>> Client_info: Client object started
+<<2019-01-16 15:44:06.255517>> Client_info: Starting loop
+<<2019-01-16 15:44:06.788927>> Client_Connect: Account code verification
+<<2019-01-16 15:44:52.331016>> Client_info: Client Disconnected
+<<2019-01-16 15:44:52.315266>> Client_info: Client Disconnected
+<<2019-01-16 15:44:52.376733>> Client_info: Client Disconnected
+<<2019-01-16 15:44:52.331111>> Client_info: Client Disconnected
+<<2019-01-16 15:44:52.340151>> Client_info: Client Disconnected
+<<2019-01-16 15:45:02.238843>> Connection: Connection from ('127.0.0.1', 40794)
+<<2019-01-16 15:45:02.254343>> Client_info: Client object started
+<<2019-01-16 15:45:02.254429>> Client_info: Starting loop
+<<2019-01-16 15:45:02.565833>> Client_Connect: 7panJvq8E-NuY0qls28Qa14ft=gETYCo Connected.
+<<2019-01-16 15:45:04.100318>> Client_info: Client Disconnected
+<<2019-01-16 15:45:14.756134>> Connection: Connection from ('127.0.0.1', 40796)
+<<2019-01-16 15:45:14.797040>> Client_info: Client object started
+<<2019-01-16 15:45:14.827751>> Client_info: Starting loop
+<<2019-01-16 15:45:18.235738>> Connection: Connection from ('127.0.0.1', 40800)
+<<2019-01-16 15:45:18.246126>> Client_info: Client object started
+<<2019-01-16 15:45:18.246219>> Client_info: Starting loop
+<<2019-01-16 15:45:19.959621>> Client_Connect: Account register None
+<<2019-01-16 15:45:34.224411>> Connection: Connection from ('127.0.0.1', 40806)
+<<2019-01-16 15:45:34.338303>> Client_info: Client object started
+<<2019-01-16 15:45:34.366187>> Client_info: Starting loop
+<<2019-01-16 15:45:34.677095>> Client_Connect: Account code verification
+<<2019-01-16 15:45:39.654330>> Connection: Connection from ('127.0.0.1', 40808)
+<<2019-01-16 15:45:39.748335>> Client_info: Client object started
+<<2019-01-16 15:45:39.790762>> Client_info: Starting loop
+<<2019-01-16 15:45:40.160108>> Client_Connect: 1bgZvwjQqOnG1JzEmKC44xU6abYTNY03 Connected.
+<<2019-01-16 15:45:41.602103>> Client_info: Client Disconnected
+<<2019-01-16 15:45:52.396738>> Client_info: Client Disconnected
+<<2019-01-16 15:45:52.396834>> Client_info: Client Disconnected
+<<2019-01-16 15:45:52.407356>> Client_info: Client Disconnected

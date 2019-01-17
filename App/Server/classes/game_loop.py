@@ -4,6 +4,8 @@
 from threading import Thread
 import classes.queue
 import classes.packet_protocol.login
+import classes.packet_protocol.register
+import classes.packet_protocol.verify
 
 # Main game loop
 def main_loop(users,log,settings, functions):
@@ -25,18 +27,38 @@ def main_loop(users,log,settings, functions):
     # Go through validate queue and log in users.
     while validate_queue.isdata():
         client, packet = validate_queue.dequeue()
-        if packet["ID"] == 2:    # Log In, Only packet to respond to with un-authorised users
-            success = classes.packet_protocol.login.main(functions, packet["DATA"])
-            responce = {"ID":2,"DATA":success}
-            if success["success"]:
-                client.valid = True
-                client.user_id = success["ID"]
-                log("Client_Connect",str(client.user_id) + " Connected.")
-        
-        else:
-            responce = {"ID":9,"DATA":"INVALID PACKET, CLIENT NOT VERIFIED"}
+        try:
+            if packet["ID"] == 2:    # Log In, Only packet to respond to with un-authorised users
+                success = classes.packet_protocol.login.main(functions, packet["DATA"])
+                responce = {"ID":2,"DATA":success}
+                if success["success"] == True:
+                    client.valid = True
+                    client.user_id = success["ID"]
+                    log("Client_Connect",str(client.user_id) + " Connected.")
+                if success["success"] == "verify":
+                    responce = {"ID":2,"DATA":success}
+                    log("Client_Connect",str(client.user_id) + " Connected. Need Verification")
 
-        client.send_que.enqueue(responce)
+
+            elif packet["ID"] == 3:   # Set up account
+                success = classes.packet_protocol.register.main(functions, packet["DATA"])
+                log("Client_Connect","Account register " + str(success["ID"]))
+                responce = {"ID":3,"DATA":success}
+
+            elif packet["ID"] == 4:   # Check verification code
+                success = classes.packet_protocol.verify.main(functions, packet["DATA"])
+                log("Client_Connect","Account code verification")
+                responce = {"ID":4, "DATA":success}
+
+
+
+            
+            else:
+                responce = {"ID":9,"DATA":"INVALID PACKET, CLIENT NOT VERIFIED"}
+
+            client.send_que.enqueue(responce)
+        except ReferenceError as e:
+            log("Server_Error","Error in Validate queue: " + str(e))
             
             
 

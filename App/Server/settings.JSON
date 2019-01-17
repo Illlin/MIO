@@ -3,5 +3,6 @@
     "file_location":"./storage/",
     "server_port": 5678, 
     "server_address": "localhost",
-    "packet_error_responce" : "{\"0\": {\"ID\": 9, \"DATA\": \"PACKET ERROR, Could not decode packet at server\"}}"
+    "packet_error_responce" : "{\"0\": {\"ID\": 9, \"DATA\": \"PACKET ERROR, Could not decode packet at server\"}}",
+    "email" : {"address":"IllinTori@gmail.com", "server":"smtp.gmail.com","port":465}
 }

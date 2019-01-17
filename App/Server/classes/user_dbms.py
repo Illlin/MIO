@@ -51,3 +51,6 @@ class UserDB:
     def add_user(self,info_dict):
         self.db.set_data(self.gen_id(),info_dict)
         self.db.write_to_file()
+
+    def remove_field(self,user_id,field):
+        del self.db.json[user_id][field]

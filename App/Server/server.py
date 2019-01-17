@@ -8,6 +8,7 @@ import classes.logger
 import classes.client
 import classes.game_loop
 import classes.user_dbms
+import classes.email
 
 # Import libereys for threading and websockets
 
@@ -52,6 +53,11 @@ def setup_user(socket, address):
 
 # Running in function so can be called by external file if needed.
 def main():
+    # Set Up Email client
+    log("Control", "Starting Email Session")
+    functions["email"] = classes.email.Email(settings)
+
+
     log("Control", "Starting User Thread")
 
     # Start Game loop thread

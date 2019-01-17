@@ -15,9 +15,13 @@ def main(functions, data):
     # User exists, check password
     if user_id != None:
         user_hash = data_base.get_info(user_id)["password"]  
-        success = bcrypt.checkpw(password.encode("utf-8"),user_hash.encode("utf-8"))  
+        success = bcrypt.checkpw(password.encode("utf-8"),user_hash.encode("utf-8"))
 
     if success:
-        return {"responce":"Log In Successful","success":True,"ID":user_id}
+        # Correct password but is account verified?
+        if data_base.get_info(user_id)["verify"]:
+            return {"responce":"Log In Successful","success":True,"ID":user_id}
+        else:
+            return {"responce":"Log In Successful","success":"verify","ID":user_id}
     else:
         return {"responce":"Email or password are invalid","success":False,"ID":None}

@@ -84,8 +84,10 @@ class Recv_loop(Thread):
                 if num == "1":
                     data += self.socket.recv(2**(i))
 
-            # Makd Dict
-            if protocol >= 240:
+            # Make Dict
+            if data == None:
+                self.parent.kill()
+            elif protocol >= 200:
                 # Protocol in Fx block, use raw bytes for data
                 item = {"ID":protocol,"DATA":data}
             else:            
@@ -111,7 +113,12 @@ class Send_loop(Thread):
         while self.alive:
             if self.queue.isdata():
                 data = self.queue.dequeue()
-                data_string = json.dumps(data["DATA"]).encode("utf-8")
-                header = make_header(data["ID"], len(data_string))
+
+                # ID is above 200 so the data should already be bytes
+                if data["ID"] >= 200:
+                    data_bytes = data["DATA"]
+                else:
+                    data_bytes = json.dumps(data["DATA"]).encode("utf-8")
+                header = make_header(data["ID"], len(data_bytes))
                 self.socket.send(header)
-                self.socket.send(data_string)
+                self.socket.send(data_bytes)

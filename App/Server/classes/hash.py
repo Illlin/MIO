@@ -10,7 +10,7 @@ def make_password_hash(password):
 
     # Hash password. This takes some time to stop brute force attack.
     password_hash = bcrypt.hashpw(password_bytes,salt)
-    return password_hash
+    return password_hash.decode("utf-8")
 
 # Checks if enterd password matches hash
 def check_password(password,password_hash):
