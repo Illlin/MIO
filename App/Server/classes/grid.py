@@ -7,7 +7,7 @@ y = 1000
 
 bg = "green"
 
-recources = {
+recourses = {
     "iron":     {"weight":0.15,"zoom":40,"char":" ","colour":"white"},
     "copper":   {"weight":0.20,"zoom":40,"char":" ","colour":"yellow"},
     "silicone": {"weight":0.10,"zoom":20,"char":" ","colour":"magenta"},
@@ -15,7 +15,7 @@ recources = {
     "oil":      {"weight":0.08,"zoom":40,"char":" ","colour":"black"}
 }
 
-rec_list = [recources["water"],recources["silicone"],recources["copper"],recources["iron"],recources["oil"]]
+rec_list = [recourses["water"],recourses["silicone"],recourses["copper"],recourses["iron"],recourses["oil"]]
 
 x_off = 1000000
 y_off = 1000000

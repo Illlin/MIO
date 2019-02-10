@@ -8,7 +8,7 @@ def read_file(location, chunk=4096):
         # Read block size and cast to bite sting
         block = rb.read(chunk)
         # Reading a b"" means that the end of the file has been reached and the string should be returned
-        if block = b"":
+        if block == b"":
             return byte
         else:
             byte += block
